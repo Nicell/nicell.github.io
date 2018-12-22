@@ -25,7 +25,6 @@ export class BrowserPreview {
     const rect = this.el.getBoundingClientRect();
 
     if (bottom >= rect.top + rect.height/2) {
-      console.log('yes');
       this.el.shadowRoot.querySelector('div').classList.remove('hidden');
       window.removeEventListener('scroll', this.handleScroll)
     }

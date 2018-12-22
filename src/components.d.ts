@@ -8,6 +8,10 @@
 import '@stencil/core';
 
 
+import {
+  IconLookup,
+  IconName,
+} from '@fortawesome/fontawesome-svg-core';
 
 
 export namespace Components {
@@ -17,17 +21,28 @@ export namespace Components {
 
   interface BrowserPreview {}
   interface BrowserPreviewAttributes extends StencilHTMLAttributes {}
+
+  interface FontawesomeIcon {
+    'class'?: string;
+    'icon': IconLookup | IconName;
+  }
+  interface FontawesomeIconAttributes extends StencilHTMLAttributes {
+    'class'?: string;
+    'icon'?: IconLookup | IconName;
+  }
 }
 
 declare global {
   interface StencilElementInterfaces {
     'AppHome': Components.AppHome;
     'BrowserPreview': Components.BrowserPreview;
+    'FontawesomeIcon': Components.FontawesomeIcon;
   }
 
   interface StencilIntrinsicElements {
     'app-home': Components.AppHomeAttributes;
     'browser-preview': Components.BrowserPreviewAttributes;
+    'fontawesome-icon': Components.FontawesomeIconAttributes;
   }
 
 
@@ -43,14 +58,22 @@ declare global {
     new (): HTMLBrowserPreviewElement;
   };
 
+  interface HTMLFontawesomeIconElement extends Components.FontawesomeIcon, HTMLStencilElement {}
+  var HTMLFontawesomeIconElement: {
+    prototype: HTMLFontawesomeIconElement;
+    new (): HTMLFontawesomeIconElement;
+  };
+
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement
     'browser-preview': HTMLBrowserPreviewElement
+    'fontawesome-icon': HTMLFontawesomeIconElement
   }
 
   interface ElementTagNameMap {
     'app-home': HTMLAppHomeElement;
     'browser-preview': HTMLBrowserPreviewElement;
+    'fontawesome-icon': HTMLFontawesomeIconElement;
   }
 
 

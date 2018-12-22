@@ -12,6 +12,7 @@ export class AppHome {
       <div class='app-home'>
         <p>
           🛠Under Construction🛠
+          <fontawesome-icon icon='user-astronaut' />
         </p>
         <browser-preview />
         <browser-preview />

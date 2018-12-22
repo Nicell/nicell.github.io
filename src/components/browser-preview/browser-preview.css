@@ -9,7 +9,7 @@
   margin: 20px;
   box-shadow: 0px 4px 20px var(--background-dark);
   background: var(--background);
-  transition: all 1s ease-in;
+  transition: all 1s ease;
 }
 
 .hidden {

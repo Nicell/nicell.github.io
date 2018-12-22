@@ -1,13 +1,24 @@
-/*
-  Global App CSS
-  ----------------------
-  Use this file for styles that should be applied to all components.
-  For example, "font-family" within the "body" selector is a CSS property
-  most apps will want applied to all components.
+:root {
+  --hue: 225;
+  --saturation: 18%;
 
-  Any global CSS variables should also be applied here.
-*/
+  --background: hsl(var(--hue), var(--saturation), 26%);
+  --backround-light: hsl(var(--hue), var(--saturation), 33%);
+  --background-dark: hsl(var(--hue), var(--saturation), 18%);
 
+  --foreground: hsl(var(--hue), var(--saturation), 88%);
+  --foreground-light: hsl(var(--hue), var(--saturation), 95%);
+  --foreground-dark: hsl(var(--hue), var(--saturation), 80%);
+
+  --text-lightness: 95%;
+  --text: hsla(0, 0%, var(--text-lightness), 100%);
+  --text-secondary: hsla(0, 0%, var(--text-lightness), 80%);
+  --text-tertiary: hsla(0, 0%, var(--text-lightness), 60%);
+
+  --primary: hsl(210, 96%, 46%);
+
+  --highlight: hsl(144, 100%, 47%);
+}
 
 body {
   margin: 0px;

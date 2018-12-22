@@ -14,15 +14,20 @@ export namespace Components {
 
   interface AppHome {}
   interface AppHomeAttributes extends StencilHTMLAttributes {}
+
+  interface BrowserPreview {}
+  interface BrowserPreviewAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
   interface StencilElementInterfaces {
     'AppHome': Components.AppHome;
+    'BrowserPreview': Components.BrowserPreview;
   }
 
   interface StencilIntrinsicElements {
     'app-home': Components.AppHomeAttributes;
+    'browser-preview': Components.BrowserPreviewAttributes;
   }
 
 
@@ -32,12 +37,20 @@ declare global {
     new (): HTMLAppHomeElement;
   };
 
+  interface HTMLBrowserPreviewElement extends Components.BrowserPreview, HTMLStencilElement {}
+  var HTMLBrowserPreviewElement: {
+    prototype: HTMLBrowserPreviewElement;
+    new (): HTMLBrowserPreviewElement;
+  };
+
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement
+    'browser-preview': HTMLBrowserPreviewElement
   }
 
   interface ElementTagNameMap {
     'app-home': HTMLAppHomeElement;
+    'browser-preview': HTMLBrowserPreviewElement;
   }
 
 

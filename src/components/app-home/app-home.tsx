@@ -13,6 +13,9 @@ export class AppHome {
         <p>
           🛠Under Construction🛠
         </p>
+        <browser-preview />
+        <browser-preview />
+        <browser-preview />
       </div>
     );
   }

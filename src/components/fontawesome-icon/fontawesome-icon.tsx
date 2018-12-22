@@ -20,7 +20,7 @@ export class FontAwesomeIcon {
       return
     }
 
-    const iconSVG = icon(iconProp).node[0];
+    const iconSVG = iconObj.node[0];
 
     return (
       <span

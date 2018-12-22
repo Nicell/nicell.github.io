@@ -13,7 +13,15 @@ export class FontAwesomeIcon {
   render() {
     let iconProp: IconLookup = typeof this.icon === 'object' ? this.icon : { prefix: 'fas', iconName: this.icon };
 
+    const iconObj = icon(iconProp);
+
+    if (!iconObj) {
+      console.error(`Icon not found! Icon: ${this.icon}`)
+      return
+    }
+
     const iconSVG = icon(iconProp).node[0];
+
     return (
       <span
         class={this.class}

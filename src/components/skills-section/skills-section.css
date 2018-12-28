@@ -15,3 +15,18 @@
 .skills-section skill-panel:last-child {
   border-right: none;
 }
+
+@media only screen and (max-width: 768px) {
+  .skills-section {
+    flex-direction: column;
+  }
+
+  .skills-section skill-panel {
+    border-right: none;
+    border-bottom: solid 1px var(--foreground-dark);
+  }
+
+  .skills-section skill-panel:last-child {
+    border-bottom: none;
+  }
+}

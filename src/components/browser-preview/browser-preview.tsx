@@ -20,7 +20,7 @@ export class BrowserPreview {
       window.addEventListener('scroll', this.handleScroll);
       window.scrollTo(window.scrollX, window.scrollY - 1);
       window.scrollTo(window.scrollX, window.scrollY + 1);
-    }, 500)
+    }, 1);
   }
 
   handleScroll(e: UIEvent) {

@@ -1,0 +1,13 @@
+.app-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dark {
+  background: var(--background);
+}
+
+.wrapper {
+  width: 960px;
+}

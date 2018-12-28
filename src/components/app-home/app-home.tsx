@@ -10,13 +10,24 @@ export class AppHome {
   render() {
     return (
       <div class='app-home'>
-        <p>
-          🛠Under Construction🛠
-          <fontawesome-icon icon='user-astronaut' />
-        </p>
-        <browser-preview />
-        <browser-preview />
-        <browser-preview />
+        <app-section dark>
+          <p>
+            🛠Under Construction🛠
+            <fontawesome-icon icon='user-astronaut' />
+          </p>
+        </app-section>
+        <app-section>
+          <skills-section />
+        </app-section>
+        <app-section dark>
+          <browser-preview site='hlpugs' direction='left' />
+        </app-section>
+        <app-section>
+          <browser-preview site='letstutor' direction='right' />
+        </app-section>
+        <app-section dark>
+          <browser-preview direction='left' />
+        </app-section>
       </div>
     );
   }

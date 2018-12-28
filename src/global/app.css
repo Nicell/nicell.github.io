@@ -3,7 +3,7 @@
   --saturation: 18%;
 
   --background: hsl(var(--hue), var(--saturation), 26%);
-  --backround-light: hsl(var(--hue), var(--saturation), 33%);
+  --background-light: hsl(var(--hue), var(--saturation), 33%);
   --background-dark: hsl(var(--hue), var(--saturation), 18%);
 
   --foreground: hsl(var(--hue), var(--saturation), 88%);

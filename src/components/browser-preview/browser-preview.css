@@ -6,15 +6,30 @@
   overflow: hidden;
   height: 400px;
   width: 600px;
-  margin: 20px;
-  box-shadow: 0px 4px 20px var(--background-dark);
+  margin: 30px;
+  box-shadow: 0px 4px 30px var(--background-dark);
   background: var(--background);
   transition: all 1s ease;
 }
 
+.left.browser-preview {
+  margin-left: -250px;
+}
+
+.right.browser-preview {
+  margin-right: -250px;
+}
+
 .hidden {
   opacity: 0;
-  transform: translate(-100%)
+}
+
+.left.hidden {
+  transform: translate(-100%);
+}
+
+.right.hidden {
+  transform: translate(100%);
 }
 
 .titlebar {

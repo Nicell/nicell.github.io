@@ -1,3 +1,8 @@
+span.fontawesom-icon {
+  display: contents;
+}
+
+/* From @fortawesome\fontawesome-svg-core\styles.css */
 svg:not(:root).svg-inline--fa {
   overflow: visible; }
 

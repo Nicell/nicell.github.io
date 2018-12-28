@@ -24,7 +24,7 @@ export class FontAwesomeIcon {
 
     return (
       <span
-        class={this.class}
+        class={`fontawesome-icon ${this.class}`}
         ref={(el: HTMLDivElement) => el.firstChild ? el.replaceChild(iconSVG, el.firstChild) : el.appendChild(iconSVG)}
       />
     );

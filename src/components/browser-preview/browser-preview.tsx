@@ -1,4 +1,4 @@
-import { Component, Element } from '@stencil/core';
+import { Component, Element, Prop } from '@stencil/core';
 
 @Component({
   tag: 'browser-preview',
@@ -7,6 +7,8 @@ import { Component, Element } from '@stencil/core';
 })
 export class BrowserPreview {
   @Element() el: HTMLElement;
+  @Prop() site: string;
+  @Prop() direction: 'left' | 'right';
 
   constructor() {
     this.handleScroll = this.handleScroll.bind(this);
@@ -14,17 +16,19 @@ export class BrowserPreview {
   }
 
   componentDidLoad() {
-    window.addEventListener('scroll', this.handleScroll);
-    window.scrollTo(window.scrollX, window.scrollY - 1);
-    window.scrollTo(window.scrollX, window.scrollY + 1);
+    setTimeout(() => {
+      window.addEventListener('scroll', this.handleScroll);
+      window.scrollTo(window.scrollX, window.scrollY - 1);
+      window.scrollTo(window.scrollX, window.scrollY + 1);
+    }, 500)
   }
 
   handleScroll(e: UIEvent) {
     const doc = (e.target as Document).documentElement;
-    const bottom =  doc.scrollTop + doc.clientHeight;
+    const bottom = doc.clientHeight;
     const rect = this.el.getBoundingClientRect();
 
-    if (bottom >= rect.top + rect.height/2) {
+    if (bottom >= (rect.top + rect.height/2)) {
       this.el.shadowRoot.querySelector('div').classList.remove('hidden');
       window.removeEventListener('scroll', this.handleScroll)
     }
@@ -36,7 +40,7 @@ export class BrowserPreview {
 
   render() {
     return (
-      <div class='browser-preview hidden'>
+      <div class={`browser-preview hidden ${this.direction}`}>
         <div class='titlebar'>
           <div class='button red' />
           <div class='button yellow' />
@@ -45,7 +49,7 @@ export class BrowserPreview {
         <img
           onLoad={this.handleImgLoad}
           class='loading preview'
-          src='/assets/img/preview-hlpugs.png'
+          src={`/assets/img/preview-${this.site}.png`}
         />
       </div>
     );

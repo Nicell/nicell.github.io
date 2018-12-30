@@ -3,36 +3,36 @@
   "fsNamespace": "app",
   "loader": "../app.js",
   "global": "app.global.js",
-  "core": "app.j4tyri1v.js",
-  "corePolyfilled": "app.mbtkt3bl.js",
+  "core": "app.obap1qq9.js",
+  "corePolyfilled": "app.oqunpu11.js",
   "components": {
     "about-section": {
       "bundleIds": {
-        "$": "o70qzerk"
+        "$": "uewzljon"
       },
       "encapsulation": "shadow"
     },
     "app-home": {
       "bundleIds": {
-        "$": "o70qzerk"
+        "$": "uewzljon"
       },
       "encapsulation": "shadow"
     },
     "app-project": {
       "bundleIds": {
-        "$": "7wfpdnvk"
+        "$": "uridhbrc"
       },
       "encapsulation": "shadow"
     },
     "app-section": {
       "bundleIds": {
-        "$": "o70qzerk"
+        "$": "uewzljon"
       },
       "encapsulation": "shadow"
     },
     "browser-preview": {
       "bundleIds": {
-        "$": "7wfpdnvk"
+        "$": "uridhbrc"
       },
       "encapsulation": "shadow"
     },
@@ -49,7 +49,7 @@
     },
     "skills-section": {
       "bundleIds": {
-        "$": "o70qzerk"
+        "$": "uewzljon"
       },
       "encapsulation": "shadow"
     }

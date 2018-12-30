@@ -5,7 +5,8 @@
   "description": "Personal website",
   "scripts": {
     "build": "stencil build",
-    "start": "stencil build --dev --watch --serve"
+    "start": "stencil build --dev --watch --serve",
+    "build-prod": "git push origin `git subtree split --prefix www dev`:master"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.12",

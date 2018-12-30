@@ -10,27 +10,31 @@ export class BrowserPreview {
   @Prop() site: string;
   @Prop() direction: 'left' | 'right';
 
+  io: IntersectionObserver;
+
   constructor() {
-    this.handleScroll = this.handleScroll.bind(this);
     this.handleImgLoad = this.handleImgLoad.bind(this);
   }
 
   componentDidLoad() {
-    setTimeout(() => {
-      window.addEventListener('scroll', this.handleScroll);
-      window.scrollTo(window.scrollX, window.scrollY - 1);
-      window.scrollTo(window.scrollX, window.scrollY + 1);
-    }, 1);
+    this.addIntersectionObserver();
   }
 
-  handleScroll(e: UIEvent) {
-    const doc = (e.target as Document).documentElement;
-    const bottom = doc.clientHeight;
-    const rect = this.el.getBoundingClientRect();
+  addIntersectionObserver() {
+    this.io = new IntersectionObserver((data: any) => {
+      if (data[0].isIntersecting) {
+        console.log('test');
+        this.el.shadowRoot.querySelector('div').classList.add('visible');
+      }
+    });
 
-    if (bottom >= (rect.top + rect.height/2)) {
-      this.el.shadowRoot.querySelector('div').classList.remove('hidden');
-      window.removeEventListener('scroll', this.handleScroll)
+    this.io.observe(this.el.shadowRoot.querySelector('div'));
+  }
+
+  removeIntersectionObserver() {
+    if (this.io) {
+      this.io.disconnect();
+      this.io = null;
     }
   }
 
@@ -40,7 +44,7 @@ export class BrowserPreview {
 
   render() {
     return (
-      <div class={`browser-preview hidden ${this.direction}`}>
+      <div class={`browser-preview ${this.direction}`}>
         <div class='titlebar'>
           <div class='button red' />
           <div class='button yellow' />

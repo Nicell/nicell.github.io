@@ -1,0 +1,40 @@
+.app-project {
+  display: flex;
+  align-items: flex-end;
+}
+
+.right {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+h1 {
+  font-family: 'Inconsolata', monospace;
+}
+
+section {
+  flex: 1;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .app-project {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .app-project {
+    width: 100vw;
+  }
+}

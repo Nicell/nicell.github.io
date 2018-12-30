@@ -2,7 +2,15 @@
   background: var(--foreground-light);
   display: flex;
   flex-direction: column;
-  min-height: 150vh;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+app-section:nth-child(odd) {
+  background: var(--background);
+  color: #ffffff;
+}
+
+a {
+  color: var(--primary);
 }

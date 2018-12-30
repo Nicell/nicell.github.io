@@ -1,4 +1,5 @@
 import { Component } from '@stencil/core';
+import { config } from '../../common/config';
 
 @Component({
   tag: 'app-home',
@@ -10,23 +11,22 @@ export class AppHome {
   render() {
     return (
       <div class='app-home'>
-        <app-section dark>
-          <p>
-            🛠Under Construction🛠
-            <fontawesome-icon icon='user-astronaut' />
-          </p>
+        <app-section>
+          <about-section />
         </app-section>
         <app-section>
-          <skills-section />
+          <skills-section skills={config.skills} />
         </app-section>
-        <app-section dark>
-          <browser-preview site='hlpugs' direction='left' />
-        </app-section>
+        {config.projects.map((project) => (
+          <app-section>
+            <app-project config={project} />
+          </app-section>
+        ))}
         <app-section>
-          <browser-preview site='letstutor' direction='right' />
-        </app-section>
-        <app-section dark>
-          <browser-preview direction='left' />
+          <footer>
+            <p>nick.winans.codes © {new Date().getFullYear()}</p>
+            <p>powered by <a target='blank' href='https://stenciljs.com'>Stencil.js</a> and <a target='blank' href='https://github.com/Nicell/nicell.github.io'>GitHub Pages</a></p>
+          </footer>
         </app-section>
       </div>
     );

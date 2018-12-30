@@ -9,6 +9,10 @@ import '@stencil/core';
 
 
 import {
+  project,
+  skillSet,
+} from './common/types';
+import {
   IconLookup,
   IconName,
 } from '@fortawesome/fontawesome-svg-core';
@@ -16,15 +20,21 @@ import {
 
 export namespace Components {
 
+  interface AboutSection {}
+  interface AboutSectionAttributes extends StencilHTMLAttributes {}
+
   interface AppHome {}
   interface AppHomeAttributes extends StencilHTMLAttributes {}
 
-  interface AppSection {
-    'dark': boolean;
+  interface AppProject {
+    'config': project;
   }
-  interface AppSectionAttributes extends StencilHTMLAttributes {
-    'dark'?: boolean;
+  interface AppProjectAttributes extends StencilHTMLAttributes {
+    'config'?: project;
   }
+
+  interface AppSection {}
+  interface AppSectionAttributes extends StencilHTMLAttributes {}
 
   interface BrowserPreview {
     'direction': 'left' | 'right';
@@ -44,16 +54,26 @@ export namespace Components {
     'icon'?: IconLookup | IconName;
   }
 
-  interface SkillPanel {}
-  interface SkillPanelAttributes extends StencilHTMLAttributes {}
+  interface SkillPanel {
+    'config': skillSet;
+  }
+  interface SkillPanelAttributes extends StencilHTMLAttributes {
+    'config'?: skillSet;
+  }
 
-  interface SkillsSection {}
-  interface SkillsSectionAttributes extends StencilHTMLAttributes {}
+  interface SkillsSection {
+    'skills': skillSet[];
+  }
+  interface SkillsSectionAttributes extends StencilHTMLAttributes {
+    'skills'?: skillSet[];
+  }
 }
 
 declare global {
   interface StencilElementInterfaces {
+    'AboutSection': Components.AboutSection;
     'AppHome': Components.AppHome;
+    'AppProject': Components.AppProject;
     'AppSection': Components.AppSection;
     'BrowserPreview': Components.BrowserPreview;
     'FontawesomeIcon': Components.FontawesomeIcon;
@@ -62,7 +82,9 @@ declare global {
   }
 
   interface StencilIntrinsicElements {
+    'about-section': Components.AboutSectionAttributes;
     'app-home': Components.AppHomeAttributes;
+    'app-project': Components.AppProjectAttributes;
     'app-section': Components.AppSectionAttributes;
     'browser-preview': Components.BrowserPreviewAttributes;
     'fontawesome-icon': Components.FontawesomeIconAttributes;
@@ -71,10 +93,22 @@ declare global {
   }
 
 
+  interface HTMLAboutSectionElement extends Components.AboutSection, HTMLStencilElement {}
+  var HTMLAboutSectionElement: {
+    prototype: HTMLAboutSectionElement;
+    new (): HTMLAboutSectionElement;
+  };
+
   interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
     new (): HTMLAppHomeElement;
+  };
+
+  interface HTMLAppProjectElement extends Components.AppProject, HTMLStencilElement {}
+  var HTMLAppProjectElement: {
+    prototype: HTMLAppProjectElement;
+    new (): HTMLAppProjectElement;
   };
 
   interface HTMLAppSectionElement extends Components.AppSection, HTMLStencilElement {}
@@ -108,7 +142,9 @@ declare global {
   };
 
   interface HTMLElementTagNameMap {
+    'about-section': HTMLAboutSectionElement
     'app-home': HTMLAppHomeElement
+    'app-project': HTMLAppProjectElement
     'app-section': HTMLAppSectionElement
     'browser-preview': HTMLBrowserPreviewElement
     'fontawesome-icon': HTMLFontawesomeIconElement
@@ -117,7 +153,9 @@ declare global {
   }
 
   interface ElementTagNameMap {
+    'about-section': HTMLAboutSectionElement;
     'app-home': HTMLAppHomeElement;
+    'app-project': HTMLAppProjectElement;
     'app-section': HTMLAppSectionElement;
     'browser-preview': HTMLBrowserPreviewElement;
     'fontawesome-icon': HTMLFontawesomeIconElement;

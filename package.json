@@ -10,7 +10,11 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.12",
     "@fortawesome/free-brands-svg-icons": "^5.6.3",
+    "@fortawesome/free-regular-svg-icons": "^5.6.3",
     "@fortawesome/free-solid-svg-icons": "^5.6.3",
+    "@fortawesome/pro-light-svg-icons": "^5.6.3",
+    "@fortawesome/pro-regular-svg-icons": "^5.6.3",
+    "@fortawesome/pro-solid-svg-icons": "^5.6.3",
     "@stencil/core": "~0.15.2",
     "@stencil/router": "~0.3.1"
   },

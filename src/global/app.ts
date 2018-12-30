@@ -1,4 +1,4 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons';
+import { faWindow, faServer, faCogs } from '@fortawesome/pro-light-svg-icons';
 
-library.add(faUserAstronaut);
+library.add(faWindow, faServer, faCogs);

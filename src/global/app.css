@@ -10,10 +10,8 @@
   --foreground-light: hsl(var(--hue), var(--saturation), 95%);
   --foreground-dark: hsl(var(--hue), var(--saturation), 80%);
 
-  --text-lightness: 95%;
-  --text: hsla(0, 0%, var(--text-lightness), 100%);
-  --text-secondary: hsla(0, 0%, var(--text-lightness), 80%);
-  --text-tertiary: hsla(0, 0%, var(--text-lightness), 60%);
+  --text-secondary: .8;
+  --text-tertiary: .6;
 
   --primary: hsl(210, 96%, 46%);
 
@@ -23,5 +21,14 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: 'Source Sans Pro',-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--background-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-dark);
 }

@@ -1,4 +1,5 @@
-import { Component } from '@stencil/core';
+import { Component, Prop } from '@stencil/core';
+import { skillSet } from '../../common/types';
 
 @Component({
   tag: 'skills-section',
@@ -7,12 +8,14 @@ import { Component } from '@stencil/core';
 })
 export class SkillsSection {
 
+  @Prop() skills: skillSet[];
+
   render() {
     return (
       <div class='skills-section'>
-        <skill-panel />
-        <skill-panel />
-        <skill-panel />
+        {this.skills.map((skillSet) => (
+          <skill-panel config={skillSet} />
+        ))}
       </div>
     );
   }

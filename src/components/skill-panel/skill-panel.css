@@ -1,8 +1,35 @@
 .skill-panel {
-  padding: 500px 30px;
+  padding: 30px;
   min-width: 225px;
   box-sizing: border-box;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inconsolata', monospace;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+header > fontawesome-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section > span {
+  margin-top: 10px;
+  opacity: var(--text-secondary);
 }

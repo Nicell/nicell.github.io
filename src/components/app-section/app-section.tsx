@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component } from '@stencil/core';
 
 @Component({
   tag: 'app-section',
@@ -6,11 +6,10 @@ import { Component, Prop } from '@stencil/core';
   shadow: true
 })
 export class AppSection {
-  @Prop() dark: boolean = false;
 
   render() {
     return (
-      <div class={`app-section ${this.dark ? 'dark' : ''}`}>
+      <div class='app-section'>
         <div class='wrapper'>
           <slot />
         </div>

@@ -4,10 +4,6 @@
   justify-content: center;
 }
 
-.dark {
-  background: var(--background);
-}
-
 .wrapper {
   max-width: 960px;
   flex-grow: 1;

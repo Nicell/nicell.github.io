@@ -11,7 +11,7 @@ export class FontAwesomeIcon {
   @Prop() class?: string;
 
   render() {
-    let iconProp: IconLookup = typeof this.icon === 'object' ? this.icon : { prefix: 'fas', iconName: this.icon };
+    let iconProp: IconLookup = typeof this.icon === 'object' ? this.icon : { prefix: 'fal', iconName: this.icon };
 
     const iconObj = icon(iconProp);
 

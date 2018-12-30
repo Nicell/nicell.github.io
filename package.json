@@ -1,0 +1,25 @@
+{
+  "name": "nicell.github.io",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Personal website",
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.12",
+    "@fortawesome/free-brands-svg-icons": "^5.6.3",
+    "@fortawesome/free-regular-svg-icons": "^5.6.3",
+    "@fortawesome/free-solid-svg-icons": "^5.6.3",
+    "@fortawesome/pro-light-svg-icons": "^5.6.3",
+    "@fortawesome/pro-regular-svg-icons": "^5.6.3",
+    "@fortawesome/pro-solid-svg-icons": "^5.6.3",
+    "@stencil/core": "~0.15.2",
+    "@stencil/router": "~0.3.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "workbox-build": "3.4.1"
+  }
+}

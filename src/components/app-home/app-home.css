@@ -1,0 +1,16 @@
+.app-home {
+  background: var(--foreground-light);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+app-section:nth-child(odd) {
+  background: var(--background);
+  color: #ffffff;
+}
+
+a {
+  color: var(--primary);
+}

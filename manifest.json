@@ -1,0 +1,13 @@
+{
+  "name": "nick.winans.codes",
+  "short_name": "winans.codes",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/icon/icon.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }],
+  "background_color": "#363C4E",
+  "theme_color": "#363C4E"
+}

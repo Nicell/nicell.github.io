@@ -49,10 +49,10 @@ export class BrowserPreview {
           <div class='button yellow' />
           <div class='button green' />
         </div>
-        <img
-          onLoad={this.handleImgLoad}
-          class='loading preview'
-          src={`/assets/img/preview-${this.site}.png`}
+        <app-img
+          alt={`${this.site} preview`}
+          src={`preview-${this.site}`}
+          type='png'
         />
       </div>
     );

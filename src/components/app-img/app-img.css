@@ -1,0 +1,7 @@
+img {
+  transition: all .2s ease;
+}
+
+.loading {
+  opacity: 0;
+}

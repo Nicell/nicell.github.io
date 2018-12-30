@@ -1,4 +1,4 @@
-import { Component } from '@stencil/core';
+import { Component, Element } from '@stencil/core';
 
 @Component({
   tag: 'about-section',
@@ -6,16 +6,17 @@ import { Component } from '@stencil/core';
   shadow: true
 })
 export class AboutSection {
-
-  componentDidLoad() {
-    window.scrollTo(window.scrollX, 0);
-  }
+  @Element() el: HTMLElement;
 
   render() {
     return (
       <div class='about-section'>
         <h1>nick.winans.codes</h1>
-        <img src='/assets/img/me.jpg'/>
+        <app-img
+          alt='Me'
+          src='me'
+          type='jpg'
+        />
         <p>
           Hi, I'm Nick. I'm a high school student fascinated by the web.
           Since my first website I made in 2012, I've been continually exploring all ends of web development.

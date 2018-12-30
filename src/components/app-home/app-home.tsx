@@ -17,16 +17,13 @@ export class AppHome {
         <app-section>
           <skills-section skills={config.skills} />
         </app-section>
-        {config.projects.map((project) => (
-          <app-section>
-            <app-project config={project} />
-          </app-section>
-        ))}
+          {config.projects.map((project) => (
+            <app-section>
+              <app-project config={project} />
+            </app-section>
+          ))}
         <app-section>
-          <footer>
-            <p>nick.winans.codes © {new Date().getFullYear()}</p>
-            <p>powered by <a target='blank' href='https://stenciljs.com'>Stencil.js</a> and <a target='blank' href='https://github.com/Nicell/nicell.github.io'>GitHub Pages</a></p>
-          </footer>
+          <app-footer />
         </app-section>
       </div>
     );

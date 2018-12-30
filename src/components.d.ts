@@ -23,8 +23,22 @@ export namespace Components {
   interface AboutSection {}
   interface AboutSectionAttributes extends StencilHTMLAttributes {}
 
+  interface AppFooter {}
+  interface AppFooterAttributes extends StencilHTMLAttributes {}
+
   interface AppHome {}
   interface AppHomeAttributes extends StencilHTMLAttributes {}
+
+  interface AppImg {
+    'alt': string;
+    'src': string;
+    'type': 'jpg' | 'png';
+  }
+  interface AppImgAttributes extends StencilHTMLAttributes {
+    'alt'?: string;
+    'src'?: string;
+    'type'?: 'jpg' | 'png';
+  }
 
   interface AppProject {
     'config': project;
@@ -72,7 +86,9 @@ export namespace Components {
 declare global {
   interface StencilElementInterfaces {
     'AboutSection': Components.AboutSection;
+    'AppFooter': Components.AppFooter;
     'AppHome': Components.AppHome;
+    'AppImg': Components.AppImg;
     'AppProject': Components.AppProject;
     'AppSection': Components.AppSection;
     'BrowserPreview': Components.BrowserPreview;
@@ -83,7 +99,9 @@ declare global {
 
   interface StencilIntrinsicElements {
     'about-section': Components.AboutSectionAttributes;
+    'app-footer': Components.AppFooterAttributes;
     'app-home': Components.AppHomeAttributes;
+    'app-img': Components.AppImgAttributes;
     'app-project': Components.AppProjectAttributes;
     'app-section': Components.AppSectionAttributes;
     'browser-preview': Components.BrowserPreviewAttributes;
@@ -99,10 +117,22 @@ declare global {
     new (): HTMLAboutSectionElement;
   };
 
+  interface HTMLAppFooterElement extends Components.AppFooter, HTMLStencilElement {}
+  var HTMLAppFooterElement: {
+    prototype: HTMLAppFooterElement;
+    new (): HTMLAppFooterElement;
+  };
+
   interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
     new (): HTMLAppHomeElement;
+  };
+
+  interface HTMLAppImgElement extends Components.AppImg, HTMLStencilElement {}
+  var HTMLAppImgElement: {
+    prototype: HTMLAppImgElement;
+    new (): HTMLAppImgElement;
   };
 
   interface HTMLAppProjectElement extends Components.AppProject, HTMLStencilElement {}
@@ -143,7 +173,9 @@ declare global {
 
   interface HTMLElementTagNameMap {
     'about-section': HTMLAboutSectionElement
+    'app-footer': HTMLAppFooterElement
     'app-home': HTMLAppHomeElement
+    'app-img': HTMLAppImgElement
     'app-project': HTMLAppProjectElement
     'app-section': HTMLAppSectionElement
     'browser-preview': HTMLBrowserPreviewElement
@@ -154,7 +186,9 @@ declare global {
 
   interface ElementTagNameMap {
     'about-section': HTMLAboutSectionElement;
+    'app-footer': HTMLAppFooterElement;
     'app-home': HTMLAppHomeElement;
+    'app-img': HTMLAppImgElement;
     'app-project': HTMLAppProjectElement;
     'app-section': HTMLAppSectionElement;
     'browser-preview': HTMLBrowserPreviewElement;

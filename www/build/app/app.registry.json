@@ -1,0 +1,57 @@
+{
+  "namespace": "App",
+  "fsNamespace": "app",
+  "loader": "../app.js",
+  "global": "app.global.js",
+  "core": "app.j4tyri1v.js",
+  "corePolyfilled": "app.mbtkt3bl.js",
+  "components": {
+    "about-section": {
+      "bundleIds": {
+        "$": "o70qzerk"
+      },
+      "encapsulation": "shadow"
+    },
+    "app-home": {
+      "bundleIds": {
+        "$": "o70qzerk"
+      },
+      "encapsulation": "shadow"
+    },
+    "app-project": {
+      "bundleIds": {
+        "$": "7wfpdnvk"
+      },
+      "encapsulation": "shadow"
+    },
+    "app-section": {
+      "bundleIds": {
+        "$": "o70qzerk"
+      },
+      "encapsulation": "shadow"
+    },
+    "browser-preview": {
+      "bundleIds": {
+        "$": "7wfpdnvk"
+      },
+      "encapsulation": "shadow"
+    },
+    "fontawesome-icon": {
+      "bundleIds": {
+        "$": "2b6yror0"
+      }
+    },
+    "skill-panel": {
+      "bundleIds": {
+        "$": "2b6yror0"
+      },
+      "encapsulation": "shadow"
+    },
+    "skills-section": {
+      "bundleIds": {
+        "$": "o70qzerk"
+      },
+      "encapsulation": "shadow"
+    }
+  }
+}

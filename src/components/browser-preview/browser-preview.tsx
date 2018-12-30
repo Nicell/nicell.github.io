@@ -23,7 +23,6 @@ export class BrowserPreview {
   addIntersectionObserver() {
     this.io = new IntersectionObserver((data: any) => {
       if (data[0].isIntersecting) {
-        console.log('test');
         this.el.shadowRoot.querySelector('div').classList.add('visible');
       }
     });

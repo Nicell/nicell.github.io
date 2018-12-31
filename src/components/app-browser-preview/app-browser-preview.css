@@ -20,7 +20,7 @@
   }
 }
 
-.browser-preview {
+.app-browser-preview {
   display: flex;
   flex-direction: column;
   border: solid 1px var(--background-dark);
@@ -35,11 +35,11 @@
   opacity: 0;
 }
 
-.left.browser-preview {
+.left.app-browser-preview {
   margin-left: -250px;
 }
 
-.right.browser-preview {
+.right.app-browser-preview {
   margin-right: -250px;
 }
 

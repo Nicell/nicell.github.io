@@ -2,19 +2,19 @@ import { Component, Prop } from '@stencil/core';
 import { skillSet } from '../../common/types';
 
 @Component({
-  tag: 'skill-panel',
-  styleUrl: 'skill-panel.css',
+  tag: 'app-skills-panel',
+  styleUrl: 'app-skills-panel.css',
   shadow: true
 })
-export class SkillPanel {
+export class AppSkillsPanel {
 
   @Prop() config: skillSet;
 
   render() {
     return (
-      <div class='skill-panel'>
+      <div class='app-skills-panel'>
         <header>
-          <fontawesome-icon icon={{ prefix: 'fal', iconName: this.config.icon}} />
+          <app-icon icon={{ prefix: 'fal', iconName: this.config.icon}} />
           <span>{this.config.label}</span>
         </header>
         <section>

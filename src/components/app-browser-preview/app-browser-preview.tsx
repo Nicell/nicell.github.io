@@ -1,11 +1,11 @@
 import { Component, Element, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'browser-preview',
-  styleUrl: 'browser-preview.css',
+  tag: 'app-browser-preview',
+  styleUrl: 'app-browser-preview.css',
   shadow: true,
 })
-export class BrowserPreview {
+export class AppBrowserPreview {
   @Element() el: HTMLElement;
   @Prop() site: string;
   @Prop() direction: 'left' | 'right';
@@ -43,7 +43,7 @@ export class BrowserPreview {
 
   render() {
     return (
-      <div class={`browser-preview ${this.direction}`}>
+      <div class={`app-browser-preview ${this.direction}`}>
         <div class='titlebar'>
           <div class='button red' />
           <div class='button yellow' />

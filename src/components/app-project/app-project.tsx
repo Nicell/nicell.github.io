@@ -13,7 +13,7 @@ export class AppProject {
   render() {
     return (
       <div class={`app-project ${this.config.direction}`}>
-        <browser-preview site={this.config.image} direction={this.config.direction} />
+        <app-browser-preview site={this.config.image} direction={this.config.direction} />
         <section>
           <h1>{this.config.title}</h1>
           <p>{this.config.description}</p>

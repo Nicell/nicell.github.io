@@ -9,25 +9,43 @@ import '@stencil/core';
 
 
 import {
-  project,
-  skillSet,
-} from './common/types';
-import {
   IconLookup,
   IconName,
 } from '@fortawesome/fontawesome-svg-core';
+import {
+  project,
+  skillSet,
+} from './common/types';
 
 
 export namespace Components {
 
-  interface AboutSection {}
-  interface AboutSectionAttributes extends StencilHTMLAttributes {}
+  interface AppAbout {}
+  interface AppAboutAttributes extends StencilHTMLAttributes {}
+
+  interface AppBrowserPreview {
+    'direction': 'left' | 'right';
+    'site': string;
+  }
+  interface AppBrowserPreviewAttributes extends StencilHTMLAttributes {
+    'direction'?: 'left' | 'right';
+    'site'?: string;
+  }
 
   interface AppFooter {}
   interface AppFooterAttributes extends StencilHTMLAttributes {}
 
   interface AppHome {}
   interface AppHomeAttributes extends StencilHTMLAttributes {}
+
+  interface AppIcon {
+    'class'?: string;
+    'icon': IconLookup | IconName;
+  }
+  interface AppIconAttributes extends StencilHTMLAttributes {
+    'class'?: string;
+    'icon'?: IconLookup | IconName;
+  }
 
   interface AppImg {
     'alt': string;
@@ -50,71 +68,59 @@ export namespace Components {
   interface AppSection {}
   interface AppSectionAttributes extends StencilHTMLAttributes {}
 
-  interface BrowserPreview {
-    'direction': 'left' | 'right';
-    'site': string;
-  }
-  interface BrowserPreviewAttributes extends StencilHTMLAttributes {
-    'direction'?: 'left' | 'right';
-    'site'?: string;
-  }
-
-  interface FontawesomeIcon {
-    'class'?: string;
-    'icon': IconLookup | IconName;
-  }
-  interface FontawesomeIconAttributes extends StencilHTMLAttributes {
-    'class'?: string;
-    'icon'?: IconLookup | IconName;
-  }
-
-  interface SkillPanel {
+  interface AppSkillsPanel {
     'config': skillSet;
   }
-  interface SkillPanelAttributes extends StencilHTMLAttributes {
+  interface AppSkillsPanelAttributes extends StencilHTMLAttributes {
     'config'?: skillSet;
   }
 
-  interface SkillsSection {
+  interface AppSkills {
     'skills': skillSet[];
   }
-  interface SkillsSectionAttributes extends StencilHTMLAttributes {
+  interface AppSkillsAttributes extends StencilHTMLAttributes {
     'skills'?: skillSet[];
   }
 }
 
 declare global {
   interface StencilElementInterfaces {
-    'AboutSection': Components.AboutSection;
+    'AppAbout': Components.AppAbout;
+    'AppBrowserPreview': Components.AppBrowserPreview;
     'AppFooter': Components.AppFooter;
     'AppHome': Components.AppHome;
+    'AppIcon': Components.AppIcon;
     'AppImg': Components.AppImg;
     'AppProject': Components.AppProject;
     'AppSection': Components.AppSection;
-    'BrowserPreview': Components.BrowserPreview;
-    'FontawesomeIcon': Components.FontawesomeIcon;
-    'SkillPanel': Components.SkillPanel;
-    'SkillsSection': Components.SkillsSection;
+    'AppSkillsPanel': Components.AppSkillsPanel;
+    'AppSkills': Components.AppSkills;
   }
 
   interface StencilIntrinsicElements {
-    'about-section': Components.AboutSectionAttributes;
+    'app-about': Components.AppAboutAttributes;
+    'app-browser-preview': Components.AppBrowserPreviewAttributes;
     'app-footer': Components.AppFooterAttributes;
     'app-home': Components.AppHomeAttributes;
+    'app-icon': Components.AppIconAttributes;
     'app-img': Components.AppImgAttributes;
     'app-project': Components.AppProjectAttributes;
     'app-section': Components.AppSectionAttributes;
-    'browser-preview': Components.BrowserPreviewAttributes;
-    'fontawesome-icon': Components.FontawesomeIconAttributes;
-    'skill-panel': Components.SkillPanelAttributes;
-    'skills-section': Components.SkillsSectionAttributes;
+    'app-skills-panel': Components.AppSkillsPanelAttributes;
+    'app-skills': Components.AppSkillsAttributes;
   }
 
 
-  interface HTMLAboutSectionElement extends Components.AboutSection, HTMLStencilElement {}
-  var HTMLAboutSectionElement: {
-    prototype: HTMLAboutSectionElement;
-    new (): HTMLAboutSectionElement;
+  interface HTMLAppAboutElement extends Components.AppAbout, HTMLStencilElement {}
+  var HTMLAppAboutElement: {
+    prototype: HTMLAppAboutElement;
+    new (): HTMLAppAboutElement;
+  };
+
+  interface HTMLAppBrowserPreviewElement extends Components.AppBrowserPreview, HTMLStencilElement {}
+  var HTMLAppBrowserPreviewElement: {
+    prototype: HTMLAppBrowserPreviewElement;
+    new (): HTMLAppBrowserPreviewElement;
   };
 
   interface HTMLAppFooterElement extends Components.AppFooter, HTMLStencilElement {}
@@ -127,6 +133,12 @@ declare global {
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
     new (): HTMLAppHomeElement;
+  };
+
+  interface HTMLAppIconElement extends Components.AppIcon, HTMLStencilElement {}
+  var HTMLAppIconElement: {
+    prototype: HTMLAppIconElement;
+    new (): HTMLAppIconElement;
   };
 
   interface HTMLAppImgElement extends Components.AppImg, HTMLStencilElement {}
@@ -147,54 +159,42 @@ declare global {
     new (): HTMLAppSectionElement;
   };
 
-  interface HTMLBrowserPreviewElement extends Components.BrowserPreview, HTMLStencilElement {}
-  var HTMLBrowserPreviewElement: {
-    prototype: HTMLBrowserPreviewElement;
-    new (): HTMLBrowserPreviewElement;
+  interface HTMLAppSkillsPanelElement extends Components.AppSkillsPanel, HTMLStencilElement {}
+  var HTMLAppSkillsPanelElement: {
+    prototype: HTMLAppSkillsPanelElement;
+    new (): HTMLAppSkillsPanelElement;
   };
 
-  interface HTMLFontawesomeIconElement extends Components.FontawesomeIcon, HTMLStencilElement {}
-  var HTMLFontawesomeIconElement: {
-    prototype: HTMLFontawesomeIconElement;
-    new (): HTMLFontawesomeIconElement;
-  };
-
-  interface HTMLSkillPanelElement extends Components.SkillPanel, HTMLStencilElement {}
-  var HTMLSkillPanelElement: {
-    prototype: HTMLSkillPanelElement;
-    new (): HTMLSkillPanelElement;
-  };
-
-  interface HTMLSkillsSectionElement extends Components.SkillsSection, HTMLStencilElement {}
-  var HTMLSkillsSectionElement: {
-    prototype: HTMLSkillsSectionElement;
-    new (): HTMLSkillsSectionElement;
+  interface HTMLAppSkillsElement extends Components.AppSkills, HTMLStencilElement {}
+  var HTMLAppSkillsElement: {
+    prototype: HTMLAppSkillsElement;
+    new (): HTMLAppSkillsElement;
   };
 
   interface HTMLElementTagNameMap {
-    'about-section': HTMLAboutSectionElement
+    'app-about': HTMLAppAboutElement
+    'app-browser-preview': HTMLAppBrowserPreviewElement
     'app-footer': HTMLAppFooterElement
     'app-home': HTMLAppHomeElement
+    'app-icon': HTMLAppIconElement
     'app-img': HTMLAppImgElement
     'app-project': HTMLAppProjectElement
     'app-section': HTMLAppSectionElement
-    'browser-preview': HTMLBrowserPreviewElement
-    'fontawesome-icon': HTMLFontawesomeIconElement
-    'skill-panel': HTMLSkillPanelElement
-    'skills-section': HTMLSkillsSectionElement
+    'app-skills-panel': HTMLAppSkillsPanelElement
+    'app-skills': HTMLAppSkillsElement
   }
 
   interface ElementTagNameMap {
-    'about-section': HTMLAboutSectionElement;
+    'app-about': HTMLAppAboutElement;
+    'app-browser-preview': HTMLAppBrowserPreviewElement;
     'app-footer': HTMLAppFooterElement;
     'app-home': HTMLAppHomeElement;
+    'app-icon': HTMLAppIconElement;
     'app-img': HTMLAppImgElement;
     'app-project': HTMLAppProjectElement;
     'app-section': HTMLAppSectionElement;
-    'browser-preview': HTMLBrowserPreviewElement;
-    'fontawesome-icon': HTMLFontawesomeIconElement;
-    'skill-panel': HTMLSkillPanelElement;
-    'skills-section': HTMLSkillsSectionElement;
+    'app-skills-panel': HTMLAppSkillsPanelElement;
+    'app-skills': HTMLAppSkillsElement;
   }
 
 

@@ -1,4 +1,4 @@
-.skill-panel {
+.app-skills-panel {
   padding: 30px;
   min-width: 225px;
   box-sizing: border-box;
@@ -17,7 +17,7 @@ header {
   margin-bottom: 20px;
 }
 
-header > fontawesome-icon {
+header > app-icon {
   font-size: 48px;
   margin-bottom: 20px;
   color: var(--primary);

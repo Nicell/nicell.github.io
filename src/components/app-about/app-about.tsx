@@ -1,16 +1,16 @@
 import { Component, Element } from '@stencil/core';
 
 @Component({
-  tag: 'about-section',
-  styleUrl: 'about-section.css',
+  tag: 'app-about',
+  styleUrl: 'app-about.css',
   shadow: true
 })
-export class AboutSection {
+export class AppAbout {
   @Element() el: HTMLElement;
 
   render() {
     return (
-      <div class='about-section'>
+      <div class='app-about'>
         <h1>nick.winans.codes</h1>
         <app-img
           alt='Me'

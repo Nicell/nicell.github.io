@@ -2,11 +2,11 @@ import { Component, Prop } from '@stencil/core';
 import { icon, IconLookup, IconName } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
-  tag: 'fontawesome-icon',
-  styleUrl: 'fontawesome-icon.css',
+  tag: 'app-icon',
+  styleUrl: 'app-icon.css',
   shadow: false
 })
-export class FontAwesomeIcon {
+export class AppIcon {
   @Prop() icon: IconLookup | IconName;
   @Prop() class?: string;
 
@@ -24,7 +24,7 @@ export class FontAwesomeIcon {
 
     return (
       <span
-        class={`fontawesome-icon ${this.class}`}
+        class={`app-icon ${this.class}`}
         ref={(el: HTMLDivElement) => el.firstChild ? el.replaceChild(iconSVG, el.firstChild) : el.appendChild(iconSVG)}
       />
     );

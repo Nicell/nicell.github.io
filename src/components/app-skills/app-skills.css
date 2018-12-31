@@ -1,4 +1,4 @@
-.skills-section {
+.app-skills {
   border: solid 1px var(--foreground-dark);
   border-radius: 8px;
   display: flex;
@@ -7,27 +7,27 @@
   box-shadow: 0px 4px 30px hsla(var(--hue), var(--saturation), 18%, .3);
 }
 
-.skills-section skill-panel {
+.app-skills app-skills-panel {
   border-right: solid 1px var(--foreground-dark);
   flex: 1;
   width: 100%;
 }
 
-.skills-section skill-panel:last-child {
+.app-skills app-skills-panel:last-child {
   border-right: none;
 }
 
 @media only screen and (max-width: 768px) {
-  .skills-section {
+  .app-skills {
     flex-direction: column;
   }
 
-  .skills-section skill-panel {
+  .app-skills app-skills-panel {
     border-right: none;
     border-bottom: solid 1px var(--foreground-dark);
   }
 
-  .skills-section skill-panel:last-child {
+  .app-skills app-skills-panel:last-child {
     border-bottom: none;
   }
 }

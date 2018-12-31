@@ -3,25 +3,36 @@
   "fsNamespace": "app",
   "loader": "../app.js",
   "global": "app.global.js",
-  "core": "app.ml4q54om.js",
-  "corePolyfilled": "app.ovauzymq.js",
+  "core": "app.2qyv5uxh.js",
+  "corePolyfilled": "app.58pglngs.js",
   "components": {
-    "about-section": {
+    "app-about": {
       "bundleIds": {
-        "$": "3njoky4y"
+        "$": "ty1i7kae"
+      },
+      "encapsulation": "shadow"
+    },
+    "app-browser-preview": {
+      "bundleIds": {
+        "$": "zikh8dut"
       },
       "encapsulation": "shadow"
     },
     "app-footer": {
       "bundleIds": {
-        "$": "3njoky4y"
+        "$": "ty1i7kae"
       }
     },
     "app-home": {
       "bundleIds": {
-        "$": "3njoky4y"
+        "$": "ty1i7kae"
       },
       "encapsulation": "shadow"
+    },
+    "app-icon": {
+      "bundleIds": {
+        "$": "ferzjxir"
+      }
     },
     "app-img": {
       "bundleIds": {
@@ -30,36 +41,25 @@
     },
     "app-project": {
       "bundleIds": {
-        "$": "61zfuobe"
+        "$": "zikh8dut"
       },
       "encapsulation": "shadow"
     },
     "app-section": {
       "bundleIds": {
-        "$": "3njoky4y"
+        "$": "ty1i7kae"
       },
       "encapsulation": "shadow"
     },
-    "browser-preview": {
+    "app-skills": {
       "bundleIds": {
-        "$": "61zfuobe"
+        "$": "ferzjxir"
       },
       "encapsulation": "shadow"
     },
-    "fontawesome-icon": {
+    "app-skills-panel": {
       "bundleIds": {
-        "$": "2b6yror0"
-      }
-    },
-    "skill-panel": {
-      "bundleIds": {
-        "$": "2b6yror0"
-      },
-      "encapsulation": "shadow"
-    },
-    "skills-section": {
-      "bundleIds": {
-        "$": "3njoky4y"
+        "$": "ferzjxir"
       },
       "encapsulation": "shadow"
     }

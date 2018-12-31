@@ -12,10 +12,10 @@ export class AppHome {
     return (
       <div class='app-home'>
         <app-section>
-          <about-section />
+          <app-about />
         </app-section>
         <app-section>
-          <skills-section skills={config.skills} />
+          <app-skills skills={config.skills} />
         </app-section>
           {config.projects.map((project) => (
             <app-section>

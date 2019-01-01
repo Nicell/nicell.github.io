@@ -11,12 +11,20 @@ export class AppProject {
   @Prop() config: project;
 
   render() {
+    const oppositeDir: 'left' | 'right' = this.config.direction === 'left' ? 'right' : 'left';
+
     return (
       <div class={`app-project ${this.config.direction}`}>
-        <app-browser-preview site={this.config.image} direction={this.config.direction} />
+        <app-anim
+          anim={oppositeDir}
+          duration={1000}
+          distance={`${oppositeDir === 'right' ? '-' : ''}100%`}
+        >
+          <app-browser-preview site={this.config.image} direction={this.config.direction} />
+        </app-anim>
         <section>
-          <h1>{this.config.title}</h1>
-          <p>{this.config.description}</p>
+          <app-anim delay={200}><h1>{this.config.title}</h1></app-anim>
+          <app-anim delay={300}><p>{this.config.description}</p></app-anim>
         </section>
       </div>
     );

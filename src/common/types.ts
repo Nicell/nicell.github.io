@@ -4,7 +4,7 @@ export interface skillSet {
   label: string;
   icon: IconName;
   description: string;
-  skillList: string[]
+  skillList: string[];
 }
 
 export interface project {
@@ -15,6 +15,6 @@ export interface project {
 }
 
 export interface configType {
-  skills: skillSet[],
-  projects: project[]
+  skills: skillSet[];
+  projects: project[];
 }

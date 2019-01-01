@@ -1,0 +1,44 @@
+.app-anim {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.app-anim.slide-up {
+  animation-name: slide-up;
+}
+
+.app-anim.slide-right {
+  animation-name: slide-right;
+}
+
+.app-anim.slide-left {
+  animation-name: slide-left;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(var(--distance));
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(var(--distance));
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(var(--distance));
+  }
+  100% {
+    opacity: 1;
+  }
+}

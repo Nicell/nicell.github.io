@@ -29,7 +29,7 @@ section {
   align-items: center;
 }
 
-section > span {
+section span {
   margin-top: 10px;
   opacity: var(--text-secondary);
 }

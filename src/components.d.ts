@@ -23,6 +23,19 @@ export namespace Components {
   interface AppAbout {}
   interface AppAboutAttributes extends StencilHTMLAttributes {}
 
+  interface AppAnim {
+    'anim': 'up' | 'right' | 'left';
+    'delay': number;
+    'distance': string;
+    'duration': number;
+  }
+  interface AppAnimAttributes extends StencilHTMLAttributes {
+    'anim'?: 'up' | 'right' | 'left';
+    'delay'?: number;
+    'distance'?: string;
+    'duration'?: number;
+  }
+
   interface AppBrowserPreview {
     'direction': 'left' | 'right';
     'site': string;
@@ -86,6 +99,7 @@ export namespace Components {
 declare global {
   interface StencilElementInterfaces {
     'AppAbout': Components.AppAbout;
+    'AppAnim': Components.AppAnim;
     'AppBrowserPreview': Components.AppBrowserPreview;
     'AppFooter': Components.AppFooter;
     'AppHome': Components.AppHome;
@@ -99,6 +113,7 @@ declare global {
 
   interface StencilIntrinsicElements {
     'app-about': Components.AppAboutAttributes;
+    'app-anim': Components.AppAnimAttributes;
     'app-browser-preview': Components.AppBrowserPreviewAttributes;
     'app-footer': Components.AppFooterAttributes;
     'app-home': Components.AppHomeAttributes;
@@ -115,6 +130,12 @@ declare global {
   var HTMLAppAboutElement: {
     prototype: HTMLAppAboutElement;
     new (): HTMLAppAboutElement;
+  };
+
+  interface HTMLAppAnimElement extends Components.AppAnim, HTMLStencilElement {}
+  var HTMLAppAnimElement: {
+    prototype: HTMLAppAnimElement;
+    new (): HTMLAppAnimElement;
   };
 
   interface HTMLAppBrowserPreviewElement extends Components.AppBrowserPreview, HTMLStencilElement {}
@@ -173,6 +194,7 @@ declare global {
 
   interface HTMLElementTagNameMap {
     'app-about': HTMLAppAboutElement
+    'app-anim': HTMLAppAnimElement
     'app-browser-preview': HTMLAppBrowserPreviewElement
     'app-footer': HTMLAppFooterElement
     'app-home': HTMLAppHomeElement
@@ -186,6 +208,7 @@ declare global {
 
   interface ElementTagNameMap {
     'app-about': HTMLAppAboutElement;
+    'app-anim': HTMLAppAnimElement;
     'app-browser-preview': HTMLAppBrowserPreviewElement;
     'app-footer': HTMLAppFooterElement;
     'app-home': HTMLAppHomeElement;

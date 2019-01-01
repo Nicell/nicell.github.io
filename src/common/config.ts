@@ -61,7 +61,7 @@ export const config: configType = {
       description: `Let's Tutor is a peer tutoring solution for schools. 
         It offers a simple way to manage peer tutoring schedules and writing submissions. 
         Tutors are able to easily view, claim, and edit submissions sent by other students at school. 
-        The site is built using React and Websockets, and it's is a Progressive Web App. 
+        The site is built using React and Websockets, and it's a Progressive Web App. 
         Currently this project is being piloted at my school, and I will be looking to expand it's reach next year.`,
       image: 'letstutor',
       direction: 'right'

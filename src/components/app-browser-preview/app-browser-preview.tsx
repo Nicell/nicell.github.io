@@ -10,31 +10,8 @@ export class AppBrowserPreview {
   @Prop() site: string;
   @Prop() direction: 'left' | 'right';
 
-  io: IntersectionObserver;
-
   constructor() {
     this.handleImgLoad = this.handleImgLoad.bind(this);
-  }
-
-  componentDidLoad() {
-    this.addIntersectionObserver();
-  }
-
-  addIntersectionObserver() {
-    this.io = new IntersectionObserver((data: any) => {
-      if (data[0].isIntersecting) {
-        this.el.shadowRoot.querySelector('div').classList.add('visible');
-      }
-    });
-
-    this.io.observe(this.el.shadowRoot.querySelector('div'));
-  }
-
-  removeIntersectionObserver() {
-    if (this.io) {
-      this.io.disconnect();
-      this.io = null;
-    }
   }
 
   handleImgLoad() {

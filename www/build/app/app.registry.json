@@ -3,8 +3,8 @@
   "fsNamespace": "app",
   "loader": "../app.js",
   "global": "app.global.js",
-  "core": "app.lmo8ybuk.js",
-  "corePolyfilled": "app.mjunr3xz.js",
+  "core": "app.rybjwc4p.js",
+  "corePolyfilled": "app.1s3nrgce.js",
   "components": {
     "app-about": {
       "bundleIds": {
@@ -14,7 +14,7 @@
     },
     "app-anim": {
       "bundleIds": {
-        "$": "v55roon5"
+        "$": "ecf2d8zq"
       }
     },
     "app-browser-preview": {

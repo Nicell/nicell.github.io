@@ -26,7 +26,7 @@ export class AppAnim {
       }
     });
 
-    this.io.observe(this.el.querySelector('.app-anim'));
+    this.io.observe(this.el.querySelector('.trigger'));
   }
 
   removeIntersectionObserver() {
@@ -46,6 +46,7 @@ export class AppAnim {
         }}
       >
         <slot />
+        <div class='trigger'></div>
       </div>
     );
   }

@@ -28,7 +28,7 @@ export class AppAbout {
             Along the way I've met great people, made meaningful projects, and learned an unbelievable amount.
           </p>
         </app-anim>
-        <a href='mailto:nick@winans.codes'>Contact Me</a>
+        <a target='_blank' href='mailto:nick@winans.codes'>Contact Me</a>
       </div>
     );
   }

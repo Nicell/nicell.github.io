@@ -11,6 +11,12 @@ app-section:nth-child(odd) {
   color: #ffffff;
 }
 
+app-section:first-child {
+  background-color: #363c4e;
+  background-image: url('/assets/img/tile.svg');
+  background-size: 200px;
+}
+
 a {
   color: var(--primary);
 }

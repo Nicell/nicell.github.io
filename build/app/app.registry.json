@@ -3,12 +3,12 @@
   "fsNamespace": "app",
   "loader": "../app.js",
   "global": "app.global.js",
-  "core": "app.rybjwc4p.js",
-  "corePolyfilled": "app.1s3nrgce.js",
+  "core": "app.3z68nabi.js",
+  "corePolyfilled": "app.38evhzfz.js",
   "components": {
     "app-about": {
       "bundleIds": {
-        "$": "siafoyxv"
+        "$": "zmq7c9uo"
       },
       "encapsulation": "shadow"
     },
@@ -25,18 +25,18 @@
     },
     "app-footer": {
       "bundleIds": {
-        "$": "siafoyxv"
+        "$": "zmq7c9uo"
       }
     },
     "app-home": {
       "bundleIds": {
-        "$": "siafoyxv"
+        "$": "zmq7c9uo"
       },
       "encapsulation": "shadow"
     },
     "app-icon": {
       "bundleIds": {
-        "$": "z4t0hsok"
+        "$": "uzwfrjjv"
       }
     },
     "app-img": {
@@ -52,19 +52,19 @@
     },
     "app-section": {
       "bundleIds": {
-        "$": "siafoyxv"
+        "$": "zmq7c9uo"
       },
       "encapsulation": "shadow"
     },
     "app-skills": {
       "bundleIds": {
-        "$": "z4t0hsok"
+        "$": "uzwfrjjv"
       },
       "encapsulation": "shadow"
     },
     "app-skills-panel": {
       "bundleIds": {
-        "$": "z4t0hsok"
+        "$": "uzwfrjjv"
       },
       "encapsulation": "shadow"
     }

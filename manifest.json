@@ -15,6 +15,6 @@
       "type": "image/png"
     }
   ],
-  "background_color": "#363C4E",
-  "theme_color": "#363C4E"
+  "background_color": "hsl(230, 30%, 26%)",
+  "theme_color": "hsl(230, 30%, 26%)"
 }

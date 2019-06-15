@@ -1,4 +1,4 @@
-import { Component, Element, Prop } from '@stencil/core';
+import { h, Component, Element, Prop } from '@stencil/core';
 
 @Component({
   tag: 'app-anim',
@@ -10,7 +10,7 @@ export class AppAnim {
   @Prop() anim: 'up' | 'right' | 'left' = 'up';
   @Prop() delay: number = 0;
   @Prop() duration: number = 500;
-  @Prop() distance: string = '20%';
+  @Prop() distance: string = '30%';
 
   io: IntersectionObserver;
 

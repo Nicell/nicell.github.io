@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { h, Component, Prop } from '@stencil/core';
 import { icon, IconLookup, IconName } from '@fortawesome/fontawesome-svg-core';
 
 @Component({

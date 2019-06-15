@@ -1,1 +1,34 @@
-:root{--hue:225;--saturation:18%;--background:hsl(var(--hue),var(--saturation),26%);--background-light:hsl(var(--hue),var(--saturation),33%);--background-dark:hsl(var(--hue),var(--saturation),18%);--foreground:hsl(var(--hue),var(--saturation),88%);--foreground-light:hsl(var(--hue),var(--saturation),95%);--foreground-dark:hsl(var(--hue),var(--saturation),80%);--text-secondary:.8;--text-tertiary:.6;--primary:#0575e6;--highlight:#00f060}body{margin:0;padding:0;font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}::-webkit-scrollbar{width:10px;background:var(--background-light)}::-webkit-scrollbar-thumb{background:var(--background-dark)}
+:root {
+  --hue: 225;
+  --saturation: 18%;
+
+  --background: hsl(var(--hue), var(--saturation), 26%);
+  --background-light: hsl(var(--hue), var(--saturation), 33%);
+  --background-dark: hsl(var(--hue), var(--saturation), 18%);
+
+  --foreground: hsl(var(--hue), var(--saturation), 88%);
+  --foreground-light: hsl(var(--hue), var(--saturation), 95%);
+  --foreground-dark: hsl(var(--hue), var(--saturation), 80%);
+
+  --text-secondary: .8;
+  --text-tertiary: .6;
+
+  --primary: hsl(210, 96%, 46%);
+
+  --highlight: hsl(144, 100%, 47%);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Source Sans Pro',-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--background-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-dark);
+}

@@ -9,19 +9,19 @@
     "build-prod": "git push origin `git subtree split --prefix www dev`:master"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.12",
-    "@fortawesome/free-brands-svg-icons": "^5.6.3",
-    "@fortawesome/free-regular-svg-icons": "^5.6.3",
-    "@fortawesome/free-solid-svg-icons": "^5.6.3",
-    "@fortawesome/pro-light-svg-icons": "^5.6.3",
-    "@fortawesome/pro-regular-svg-icons": "^5.6.3",
-    "@fortawesome/pro-solid-svg-icons": "^5.6.3",
-    "@stencil/core": "~0.15.2",
-    "@stencil/router": "~0.3.1",
-    "intersection-observer": "^0.5.1"
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-regular-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/pro-light-svg-icons": "^5.9.0",
+    "@fortawesome/pro-regular-svg-icons": "^5.9.0",
+    "@fortawesome/pro-solid-svg-icons": "^5.9.0",
+    "@stencil/core": "^1.0.4",
+    "@stencil/router": "^1.0.1",
+    "intersection-observer": "^0.7.0"
   },
   "license": "MIT",
   "devDependencies": {
-    "workbox-build": "3.4.1"
+    "workbox-build": "4.3.1"
   }
 }

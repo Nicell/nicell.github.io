@@ -47,7 +47,7 @@ export const config: configType = {
   projects: [
     {
       title: 'HLPugs.tf',
-      description: `HLPugs.tf is captain draft pick up game creator for Team Fortress 2. 
+      description: `HLPugs.tf is a captain draft pick up game creator for Team Fortress 2. 
         It's inspired by a similar project named PugChamp, but it fits into another gamemode PugChamp does not offer. 
         The current site was built using Vanilla JS, Socket.io, Node.js, and Express. 
         An open source rewrite of the site is currently in progress allowing for more configuration and wider usability.

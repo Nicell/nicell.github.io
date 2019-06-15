@@ -5,9 +5,7 @@
  */
 
 
-import '@stencil/core';
-
-
+import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 import {
   IconLookup,
   IconName,
@@ -17,113 +15,42 @@ import {
   skillSet,
 } from './common/types';
 
-
 export namespace Components {
-
   interface AppAbout {}
-  interface AppAboutAttributes extends StencilHTMLAttributes {}
-
   interface AppAnim {
     'anim': 'up' | 'right' | 'left';
     'delay': number;
     'distance': string;
     'duration': number;
   }
-  interface AppAnimAttributes extends StencilHTMLAttributes {
-    'anim'?: 'up' | 'right' | 'left';
-    'delay'?: number;
-    'distance'?: string;
-    'duration'?: number;
-  }
-
   interface AppBrowserPreview {
     'direction': 'left' | 'right';
     'site': string;
   }
-  interface AppBrowserPreviewAttributes extends StencilHTMLAttributes {
-    'direction'?: 'left' | 'right';
-    'site'?: string;
-  }
-
   interface AppFooter {}
-  interface AppFooterAttributes extends StencilHTMLAttributes {}
-
   interface AppHome {}
-  interface AppHomeAttributes extends StencilHTMLAttributes {}
-
   interface AppIcon {
     'class'?: string;
     'icon': IconLookup | IconName;
   }
-  interface AppIconAttributes extends StencilHTMLAttributes {
-    'class'?: string;
-    'icon'?: IconLookup | IconName;
-  }
-
   interface AppImg {
     'alt': string;
     'src': string;
     'type': 'jpg' | 'png';
   }
-  interface AppImgAttributes extends StencilHTMLAttributes {
-    'alt'?: string;
-    'src'?: string;
-    'type'?: 'jpg' | 'png';
-  }
-
   interface AppProject {
     'config': project;
   }
-  interface AppProjectAttributes extends StencilHTMLAttributes {
-    'config'?: project;
-  }
-
   interface AppSection {}
-  interface AppSectionAttributes extends StencilHTMLAttributes {}
-
-  interface AppSkillsPanel {
-    'config': skillSet;
-  }
-  interface AppSkillsPanelAttributes extends StencilHTMLAttributes {
-    'config'?: skillSet;
-  }
-
   interface AppSkills {
     'skills': skillSet[];
   }
-  interface AppSkillsAttributes extends StencilHTMLAttributes {
-    'skills'?: skillSet[];
+  interface AppSkillsPanel {
+    'config': skillSet;
   }
 }
 
 declare global {
-  interface StencilElementInterfaces {
-    'AppAbout': Components.AppAbout;
-    'AppAnim': Components.AppAnim;
-    'AppBrowserPreview': Components.AppBrowserPreview;
-    'AppFooter': Components.AppFooter;
-    'AppHome': Components.AppHome;
-    'AppIcon': Components.AppIcon;
-    'AppImg': Components.AppImg;
-    'AppProject': Components.AppProject;
-    'AppSection': Components.AppSection;
-    'AppSkillsPanel': Components.AppSkillsPanel;
-    'AppSkills': Components.AppSkills;
-  }
-
-  interface StencilIntrinsicElements {
-    'app-about': Components.AppAboutAttributes;
-    'app-anim': Components.AppAnimAttributes;
-    'app-browser-preview': Components.AppBrowserPreviewAttributes;
-    'app-footer': Components.AppFooterAttributes;
-    'app-home': Components.AppHomeAttributes;
-    'app-icon': Components.AppIconAttributes;
-    'app-img': Components.AppImgAttributes;
-    'app-project': Components.AppProjectAttributes;
-    'app-section': Components.AppSectionAttributes;
-    'app-skills-panel': Components.AppSkillsPanelAttributes;
-    'app-skills': Components.AppSkillsAttributes;
-  }
 
 
   interface HTMLAppAboutElement extends Components.AppAbout, HTMLStencilElement {}
@@ -180,33 +107,18 @@ declare global {
     new (): HTMLAppSectionElement;
   };
 
-  interface HTMLAppSkillsPanelElement extends Components.AppSkillsPanel, HTMLStencilElement {}
-  var HTMLAppSkillsPanelElement: {
-    prototype: HTMLAppSkillsPanelElement;
-    new (): HTMLAppSkillsPanelElement;
-  };
-
   interface HTMLAppSkillsElement extends Components.AppSkills, HTMLStencilElement {}
   var HTMLAppSkillsElement: {
     prototype: HTMLAppSkillsElement;
     new (): HTMLAppSkillsElement;
   };
 
+  interface HTMLAppSkillsPanelElement extends Components.AppSkillsPanel, HTMLStencilElement {}
+  var HTMLAppSkillsPanelElement: {
+    prototype: HTMLAppSkillsPanelElement;
+    new (): HTMLAppSkillsPanelElement;
+  };
   interface HTMLElementTagNameMap {
-    'app-about': HTMLAppAboutElement
-    'app-anim': HTMLAppAnimElement
-    'app-browser-preview': HTMLAppBrowserPreviewElement
-    'app-footer': HTMLAppFooterElement
-    'app-home': HTMLAppHomeElement
-    'app-icon': HTMLAppIconElement
-    'app-img': HTMLAppImgElement
-    'app-project': HTMLAppProjectElement
-    'app-section': HTMLAppSectionElement
-    'app-skills-panel': HTMLAppSkillsPanelElement
-    'app-skills': HTMLAppSkillsElement
-  }
-
-  interface ElementTagNameMap {
     'app-about': HTMLAppAboutElement;
     'app-anim': HTMLAppAnimElement;
     'app-browser-preview': HTMLAppBrowserPreviewElement;
@@ -216,17 +128,67 @@ declare global {
     'app-img': HTMLAppImgElement;
     'app-project': HTMLAppProjectElement;
     'app-section': HTMLAppSectionElement;
-    'app-skills-panel': HTMLAppSkillsPanelElement;
     'app-skills': HTMLAppSkillsElement;
+    'app-skills-panel': HTMLAppSkillsPanelElement;
   }
-
-
-  export namespace JSX {
-    export interface Element {}
-    export interface IntrinsicElements extends StencilIntrinsicElements {
-      [tagName: string]: any;
-    }
-  }
-  export interface HTMLAttributes extends StencilHTMLAttributes {}
-
 }
+
+declare namespace LocalJSX {
+  interface AppAbout extends JSXBase.HTMLAttributes<HTMLAppAboutElement> {}
+  interface AppAnim extends JSXBase.HTMLAttributes<HTMLAppAnimElement> {
+    'anim'?: 'up' | 'right' | 'left';
+    'delay'?: number;
+    'distance'?: string;
+    'duration'?: number;
+  }
+  interface AppBrowserPreview extends JSXBase.HTMLAttributes<HTMLAppBrowserPreviewElement> {
+    'direction'?: 'left' | 'right';
+    'site'?: string;
+  }
+  interface AppFooter extends JSXBase.HTMLAttributes<HTMLAppFooterElement> {}
+  interface AppHome extends JSXBase.HTMLAttributes<HTMLAppHomeElement> {}
+  interface AppIcon extends JSXBase.HTMLAttributes<HTMLAppIconElement> {
+    'class'?: string;
+    'icon'?: IconLookup | IconName;
+  }
+  interface AppImg extends JSXBase.HTMLAttributes<HTMLAppImgElement> {
+    'alt'?: string;
+    'src'?: string;
+    'type'?: 'jpg' | 'png';
+  }
+  interface AppProject extends JSXBase.HTMLAttributes<HTMLAppProjectElement> {
+    'config'?: project;
+  }
+  interface AppSection extends JSXBase.HTMLAttributes<HTMLAppSectionElement> {}
+  interface AppSkills extends JSXBase.HTMLAttributes<HTMLAppSkillsElement> {
+    'skills'?: skillSet[];
+  }
+  interface AppSkillsPanel extends JSXBase.HTMLAttributes<HTMLAppSkillsPanelElement> {
+    'config'?: skillSet;
+  }
+
+  interface IntrinsicElements {
+    'app-about': AppAbout;
+    'app-anim': AppAnim;
+    'app-browser-preview': AppBrowserPreview;
+    'app-footer': AppFooter;
+    'app-home': AppHome;
+    'app-icon': AppIcon;
+    'app-img': AppImg;
+    'app-project': AppProject;
+    'app-section': AppSection;
+    'app-skills': AppSkills;
+    'app-skills-panel': AppSkillsPanel;
+  }
+}
+
+export { LocalJSX as JSX };
+
+
+declare module "@stencil/core" {
+  export namespace JSX {
+    interface IntrinsicElements extends LocalJSX.IntrinsicElements {}
+  }
+}
+
+

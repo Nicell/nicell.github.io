@@ -53,8 +53,8 @@ export const config: configType = {
         It's inspired by a similar project named PugChamp, but it fits into another gamemode PugChamp does not offer.
         The current site was built using Vanilla JS, Socket.io, Node.js, and Express.
         An open source rewrite of the site is currently in progress allowing for more configuration and wider usability.
-        The site has served nearly 5,000 games to over a 1,000 users.
-        Today the site is still used every day by TF2 community members in North America and Europe. `,
+        The site has served over 5,000 games to over a 1,000 users.
+        Today the site is still used every day by TF2 community members in North America and Europe.`,
       image: 'hlpugs',
       direction: 'left'
     },
@@ -65,7 +65,8 @@ export const config: configType = {
         Tutors are able to easily view, claim, and edit submissions sent by other students at school.
         The site is built using React and Websockets, and it's a Progressive Web App.
         This project was piloted at my school last year with great success.
-        Currently this project is being upgraded`,
+        Currently this project is in the process of an enhancement.
+        React Native and a new admin dashboard built with React are on the list of changes.`,
       image: 'letstutor',
       direction: 'right'
     }

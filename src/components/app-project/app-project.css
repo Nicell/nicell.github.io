@@ -25,6 +25,9 @@ section {
 
 p {
   line-height: 1.5;
+  font-size: 1.125em;
+  text-indent: 2em;
+  opacity: var(--text-secondary);
 }
 
 @media only screen and (max-width: 768px) {

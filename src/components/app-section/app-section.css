@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  border-bottom: solid 3px var(--background-dark);
 }
 
 .wrapper {

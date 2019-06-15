@@ -22,8 +22,8 @@ export class AppAbout {
           />
         </app-anim>
         <app-anim delay={400}>
-          <p>
-            Hi, I'm Nick. I design and build web apps.
+          <p class='hi'>
+            <span>Hi, I'm Nick.</span><span>I design and build web apps.</span>
           </p>
           <p>
             I'm constantly learning, so I can refine my user interfaces, make my code easier to maintain, and optimize my deployments.

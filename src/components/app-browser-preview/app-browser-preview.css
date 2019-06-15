@@ -1,7 +1,7 @@
 .app-browser-preview {
   display: flex;
   flex-direction: column;
-  border: solid 1px var(--background-dark);
+  border: solid 2px var(--background-dark);
   border-radius: 8px;
   overflow: hidden;
   height: 400px;
@@ -21,18 +21,20 @@
 }
 
 .titlebar {
-  padding: 10px;
+  padding: 8px;
   background: var(--background);
   display: flex;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
   z-index: 1;
+  border-bottom: solid 2px var(--background-dark);
 }
 
 .button {
   height: 10px;
   width: 10px;
-  border-radius: 5px;
+  border-radius: 7px;
   margin-right: 5px;
+  border: solid 2px var(--background-dark);
 }
 
 .red {

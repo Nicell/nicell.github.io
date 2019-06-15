@@ -6,8 +6,8 @@
   --background-light: hsl(var(--hue), var(--saturation), 33%);
   --background-dark: hsl(var(--hue), var(--saturation), 18%);
 
-  --foreground: hsl(var(--hue), var(--saturation), 88%);
-  --foreground-light: hsl(var(--hue), var(--saturation), 95%);
+  --foreground: hsl(var(--hue), var(--saturation), 92%);
+  --foreground-light: hsl(var(--hue), var(--saturation), 98%);
   --foreground-dark: hsl(var(--hue), var(--saturation), 80%);
 
   --text-secondary: .8;

@@ -1,12 +1,19 @@
-<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <title>Nick Winans</title> <meta name="Description" content="My personal website."> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <meta name="theme-color" content="#363C4E"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta http-equiv="x-ua-compatible" content="IE=Edge"> <link href="/build/app.css" rel="stylesheet"> <script type="module" src="/build/app.esm.js"></script> <script nomodule="" src="/build/app.js"></script> <link rel="apple-touch-icon" href="/assets/icon/icon.png"> <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico"> <link rel="manifest" href="/manifest.json"> <link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro" rel="stylesheet"> </head> <body> <noscript>
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <title>Nick Winans</title> <meta name="Description" content="My personal website."> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <meta name="theme-color" content="#363C4E"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta http-equiv="x-ua-compatible" content="IE=Edge"> <style>:root{--hue:225;--saturation:18%;--background:hsl(var(--hue),var(--saturation),26%);--background-light:hsl(var(--hue),var(--saturation),33%);--background-dark:hsl(var(--hue),var(--saturation),18%);--foreground:hsl(var(--hue),var(--saturation),88%);--foreground-light:hsl(var(--hue),var(--saturation),95%);--foreground-dark:hsl(var(--hue),var(--saturation),80%);--text-secondary:.8;--text-tertiary:.6;--primary:#0575e6;--highlight:#00f060}body{margin:0;padding:0;font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}::-webkit-scrollbar{width:10px;background:var(--background-light)}::-webkit-scrollbar-thumb{background:var(--background-dark)}</style>  <link rel="modulepreload" href="/build/p-6325edc4.js"><link rel="modulepreload" href="/build/p-s7txuaen.entry.js"><script nomodule="" src="/build/app.js"></script> <link rel="apple-touch-icon" href="/assets/icon/icon.png"> <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico"> <link rel="manifest" href="/manifest.json"> <link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro" rel="stylesheet"> </head> <body> <noscript>
     You need to enable JavaScript to view this site.
-  </noscript> <app-home></app-home> <script>
+  </noscript> <app-home></app-home> <script data-build="2019-06-15T15:24:24">
 if ('serviceWorker' in navigator && location.protocol !== 'file:') {
-  // auto-unregister service worker during dev mode
-  navigator.serviceWorker.getRegistration().then(function(registration) {
-    if (registration) {
-      registration.unregister().then(function() { location.reload(true) });
-    }
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js')
+      .then(function(reg) {
+        reg.onupdatefound = function() {
+          var installingWorker = reg.installing;
+          installingWorker.onstatechange = function() {
+            if (installingWorker.state === 'installed') {
+              window.dispatchEvent(new Event('swUpdate'))
+            }
+          }
+        }
+      })
+      .catch(function(err) { console.error('service worker error', err) });
   });
-}
-</script></body></html>
+}</script><script type="module" data-resources-url="/build/" data-namespace="app">import{p,b as a}from"/build/p-6325edc4.js";p().then(p=>a([["p-s7txuaen",[[1,"app-home"],[1,"app-project",{config:[16]}],[1,"app-about"],[1,"app-skills",{skills:[16]}],[0,"app-footer"],[1,"app-section"],[1,"app-browser-preview",{site:[1],direction:[1]}],[1,"app-skills-panel",{config:[16]}],[4,"app-anim",{anim:[1],delay:[2],duration:[2],distance:[1]}],[0,"app-icon",{icon:[1],class:[1]}],[0,"app-img",{alt:[1],src:[1],type:[1]}]]]],{resourcesUrl:p}));</script></body></html>

@@ -31,6 +31,11 @@ p {
   .app-project {
     flex-direction: column;
   }
+
+  .left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media only screen and (max-width: 420px) {

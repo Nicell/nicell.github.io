@@ -23,12 +23,19 @@ export class AppAbout {
         </app-anim>
         <app-anim delay={400}>
           <p>
-            Hi, I'm Nick. I'm a high school student fascinated by the web.
-            Since my first website I made in 2012, I've been continually exploring all ends of web development.
-            Along the way I've met great people, made meaningful projects, and learned an unbelievable amount.
+            Hi, I'm Nick. I design and build web apps.
+          </p>
+          <p>
+            I'm constantly learning, so I can refine my user interfaces, make my code easier to maintain, and optimize my deployments.
+          </p>
+          <p>
+            You can find some of my skills and projects here.
           </p>
         </app-anim>
-        <a target='_blank' href='mailto:nick@winans.codes'>Contact Me</a>
+        <a target='_blank' href='mailto:nick@winans.codes'>
+          <app-icon icon={{prefix: 'fal', iconName: 'envelope'}}/>
+          <span>Contact Me</span>
+        </a>
       </div>
     );
   }

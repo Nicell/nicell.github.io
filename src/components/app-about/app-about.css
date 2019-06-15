@@ -9,6 +9,7 @@
 }
 
 h1 {
+  margin-top: 2em;
   font-family: 'Inconsolata', monospace;
 }
 
@@ -22,19 +23,22 @@ img {
 p {
   opacity: var(--text-secondary);
   max-width: 500px;
+  line-height: 1.25;
   text-align: center;
 }
 
 a {
+  display: inline-flex;
+  align-items: center;
   border: solid 2px var(--primary);
   border-radius: 999px;
-  padding: 10px 20px;
+  padding: 10px 15px;
   background: var(--background);
   color: hsl(0, 0%, 100%);
   box-shadow: 0px 2px 15px hsla(var(--hue), var(--saturation), 18%, .5);
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
   font-family: 'Iconsolata', monospace;
   cursor: pointer;
   outline: none;
@@ -42,6 +46,7 @@ a {
   text-decoration: none;
   font-size: 16px;
   z-index: 2;
+  transition: all .2s ease;
 }
 
 a:before {
@@ -53,10 +58,49 @@ a:before {
   height: 100%;
   background: var(--primary);
   z-index: -1;
-  transform: skewX(30deg) translateX(-125%);
+  transform: skewX(30deg) translateX(-130%);
   transition: all .2s ease;
 }
 
 a:hover:before {
   transform: skewX(30deg) translateX(-15%);
+}
+
+a > app-icon {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+a > span {
+  white-space: nowrap;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  a {
+    top: auto;
+    padding: 10px 12px 10px 11px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  a > span {
+    opacity: 0;
+    transition: all .3s ease;
+    max-width: 0;
+  }
+
+  a:hover > span {
+    max-width: 100px;
+    opacity: 1;
+  }
+
+  a > app-icon {
+    padding-right: 0;
+  }
+
+  a:hover > app-icon {
+    padding-right: 10px;
+  }
 }

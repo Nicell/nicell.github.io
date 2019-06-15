@@ -11,7 +11,7 @@ export class AppProject {
   @Prop() config: project;
 
   render() {
-    const oppositeDir: 'left' | 'right' = this.config.direction === 'left' ? 'right' : 'left';
+    const oppositeDir: 'left' | 'right' = this.config.direction === 'right' || window.innerWidth <= 768 ? 'left' : 'right';
 
     return (
       <div class={`app-project ${this.config.direction}`}>

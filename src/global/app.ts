@@ -1,6 +1,6 @@
 import WebFont from 'webfontloader';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faWindow, faServer, faCogs } from '@fortawesome/pro-light-svg-icons';
+import { faEnvelope, faWindow, faServer, faCogs } from '@fortawesome/pro-light-svg-icons';
 import 'intersection-observer';
 
 WebFont.load({
@@ -9,4 +9,4 @@ WebFont.load({
   }
 });
 
-library.add(faWindow, faServer, faCogs);
+library.add(faEnvelope, faWindow, faServer, faCogs);

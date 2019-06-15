@@ -1,6 +1,6 @@
 :root {
-  --hue: 225;
-  --saturation: 18%;
+  --hue: 230;
+  --saturation: 30%;
 
   --background: hsl(var(--hue), var(--saturation), 26%);
   --background-light: hsl(var(--hue), var(--saturation), 33%);

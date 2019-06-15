@@ -13,6 +13,8 @@
   --text-secondary: .8;
   --text-tertiary: .6;
 
+  --text-link: hsl(210, 96%, 70%);
+
   --primary: hsl(210, 96%, 46%);
 
   --highlight: hsl(144, 100%, 47%);

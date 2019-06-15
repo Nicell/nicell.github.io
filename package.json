@@ -18,10 +18,12 @@
     "@fortawesome/pro-solid-svg-icons": "^5.9.0",
     "@stencil/core": "^1.0.4",
     "@stencil/router": "^1.0.1",
-    "intersection-observer": "^0.7.0"
+    "intersection-observer": "^0.7.0",
+    "webfontloader": "^1.6.28"
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/webfontloader": "^1.6.29",
     "workbox-build": "4.3.1"
   }
 }

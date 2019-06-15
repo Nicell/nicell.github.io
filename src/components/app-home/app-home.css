@@ -18,5 +18,5 @@ app-section:first-child {
 }
 
 a {
-  color: var(--primary);
+  color: var(--text-link);
 }

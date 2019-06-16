@@ -11,6 +11,7 @@ export class AppAnim {
   @Prop() delay: number = 0;
   @Prop() duration: number = 500;
   @Prop() distance: string = '30%';
+  @Prop() trigger: string = '33%';
 
   io: IntersectionObserver;
 
@@ -46,7 +47,7 @@ export class AppAnim {
         }}
       >
         <slot />
-        <div class='trigger'></div>
+        <div class='trigger' style={{top: this.trigger}}></div>
       </div>
     );
   }

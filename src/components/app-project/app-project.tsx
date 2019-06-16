@@ -22,7 +22,7 @@ export class AppProject {
           <app-browser-preview site={this.config.image} direction={this.config.direction} />
         </app-anim>
         <section>
-          <app-anim delay={200}><h1>{this.config.title}</h1></app-anim>
+          <app-anim delay={200} distance='100%'><h1>{this.config.title}</h1></app-anim>
           <app-anim delay={300}><p>{this.config.description}</p></app-anim>
         </section>
       </div>

@@ -25,6 +25,7 @@ export namespace Components {
     'delay': number;
     'distance': string;
     'duration': number;
+    'trigger': string;
   }
   interface AppBrowserPreview {
     'direction': 'left' | 'right';
@@ -153,6 +154,7 @@ declare namespace LocalJSX {
     'delay'?: number;
     'distance'?: string;
     'duration'?: number;
+    'trigger'?: string;
   }
   interface AppBrowserPreview extends JSXBase.HTMLAttributes<HTMLAppBrowserPreviewElement> {
     'direction'?: 'left' | 'right';

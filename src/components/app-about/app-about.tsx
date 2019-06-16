@@ -12,17 +12,17 @@ export class AppAbout {
   render() {
     return (
       <div class='app-about'>
-        <app-anim>
+        <app-anim distance='100%'>
           <h1>nick.winans.codes</h1>
         </app-anim>
-        <app-anim delay={200}>
+        <app-anim delay={100}>
           <app-img
             alt='Me'
             src='me'
             type='jpg'
           />
         </app-anim>
-        <app-anim delay={400}>
+        <app-anim delay={200}>
           <p class='hi'>
             <span>I'm Nick.</span><span>I design and build web apps.</span>
           </p>
@@ -36,7 +36,7 @@ export class AppAbout {
             You can find some of my skills and projects here.
           </p>
         </app-anim>
-        <app-anim delay={600}>
+        <app-anim delay={300} distance='100%'>
           <div class='links'>
             {this.config.map(link => (
               <a target='_blank' rel='noopener' title={link.title} href={link.link}>

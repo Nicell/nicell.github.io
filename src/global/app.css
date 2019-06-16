@@ -10,7 +10,7 @@
   --foreground-light: hsl(var(--hue), var(--saturation), 98%);
   --foreground-dark: hsl(var(--hue), var(--saturation), 80%);
 
-  --shadow: hsla(0, 0%, 0%, 0.3);
+  --shadow: hsla(var(--hue), var(--saturation), 10%, 0.3);
 
   --text-secondary: .8;
   --text-tertiary: .6;

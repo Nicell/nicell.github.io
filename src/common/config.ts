@@ -75,6 +75,7 @@ export const config: configType = {
         prefix: 'fab',
         iconName: 'github'
       },
+      title: 'GitHub',
       link: 'https://github.com/Nicell'
     },
     {
@@ -82,6 +83,7 @@ export const config: configType = {
         prefix: 'fas',
         iconName: 'envelope'
       },
+      title: 'Email',
       link: 'mailto:nick@winans.codes'
     },
     {
@@ -89,6 +91,7 @@ export const config: configType = {
         prefix: 'fab',
         iconName: 'reddit'
       },
+      title: 'Reddit',
       link: 'https://www.reddit.com/user/Nicell'
     },
     {
@@ -96,6 +99,7 @@ export const config: configType = {
         prefix: 'fab',
         iconName: 'twitch'
       },
+      title: 'Twitch',
       link: 'https://www.twitch.tv/nicell'
     },
     {
@@ -103,6 +107,7 @@ export const config: configType = {
         prefix: 'fab',
         iconName: 'steam'
       },
+      title: 'Steam',
       link: 'https://steamcommunity.com/id/nicell_'
     },
     {
@@ -110,6 +115,7 @@ export const config: configType = {
         prefix: 'fab',
         iconName: 'linkedin'
       },
+      title: 'LinkedIn',
       link: 'https://www.linkedin.com/in/nick-winans-417395173/'
     }
   ]

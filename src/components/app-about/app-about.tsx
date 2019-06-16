@@ -39,7 +39,7 @@ export class AppAbout {
         <app-anim delay={600}>
           <div class='links'>
             {this.config.map(link => (
-              <a target='_blank' rel='noopener' href={link.link}>
+              <a target='_blank' rel='noopener' title={link.title} href={link.link}>
                 <app-icon icon={link.icon} />
               </a>
             ))}

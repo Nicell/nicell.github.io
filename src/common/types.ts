@@ -15,6 +15,7 @@ export interface project {
 
 export interface link {
   icon: IconLookup;
+  title: string;
   link: string;
 }
 

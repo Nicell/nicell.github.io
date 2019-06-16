@@ -5,20 +5,19 @@ export const config: configType = {
     {
       label: 'Front End',
       icon: 'window',
-      description: '',
       skillList: [
         'React',
         'CSS and SASS',
-        'Vanilla JS DOM interactions',
+        'Vanilla JS DOM',
         'Handlebars',
         'Stencil.js',
-        'jQuery'
+        'jQuery',
+        'GSAP Tween'
       ]
     },
     {
       label: 'Back End',
       icon: 'server',
-      description: '',
       skillList: [
         'Node.js',
         'Express',
@@ -27,13 +26,12 @@ export const config: configType = {
         'MySQL',
         'MongoDB',
         'PostgreSQL',
-        'Websockets/Socket.io'
+        'WebSockets'
       ]
     },
     {
       label: 'DevOps',
       icon: 'cogs',
-      description: '',
       skillList: [
         'Debian/Ubuntu',
         'NGINX',

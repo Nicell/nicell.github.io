@@ -18,8 +18,6 @@ export class AppSkillsPanel {
           <span>{this.config.label}</span>
         </header>
         <section>
-          <span>{this.config.description}</span>
-          <p>Experience with:</p>
           {this.config.skillList.map((skill) => (
             <span>{skill}</span>
           ))}

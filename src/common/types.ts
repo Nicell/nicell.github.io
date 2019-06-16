@@ -3,7 +3,6 @@ import { IconName } from "@fortawesome/pro-light-svg-icons";
 export interface skillSet {
   label: string;
   icon: IconName;
-  description: string;
   skillList: string[];
 }
 

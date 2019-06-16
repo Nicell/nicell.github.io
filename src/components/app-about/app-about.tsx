@@ -33,7 +33,7 @@ export class AppAbout {
           </p>
         </app-anim>
         <a target='_blank' href='mailto:nick@winans.codes'>
-          <app-icon icon={{prefix: 'fal', iconName: 'envelope'}}/>
+          <app-icon icon={{prefix: 'far', iconName: 'envelope'}}/>
           <span>Contact Me</span>
         </a>
       </div>

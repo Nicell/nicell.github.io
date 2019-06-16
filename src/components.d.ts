@@ -48,6 +48,7 @@ export namespace Components {
   interface AppSkillsPanel {
     'config': skillSet;
   }
+  interface AppUpdate {}
 }
 
 declare global {
@@ -118,6 +119,12 @@ declare global {
     prototype: HTMLAppSkillsPanelElement;
     new (): HTMLAppSkillsPanelElement;
   };
+
+  interface HTMLAppUpdateElement extends Components.AppUpdate, HTMLStencilElement {}
+  var HTMLAppUpdateElement: {
+    prototype: HTMLAppUpdateElement;
+    new (): HTMLAppUpdateElement;
+  };
   interface HTMLElementTagNameMap {
     'app-about': HTMLAppAboutElement;
     'app-anim': HTMLAppAnimElement;
@@ -130,6 +137,7 @@ declare global {
     'app-section': HTMLAppSectionElement;
     'app-skills': HTMLAppSkillsElement;
     'app-skills-panel': HTMLAppSkillsPanelElement;
+    'app-update': HTMLAppUpdateElement;
   }
 }
 
@@ -166,6 +174,7 @@ declare namespace LocalJSX {
   interface AppSkillsPanel extends JSXBase.HTMLAttributes<HTMLAppSkillsPanelElement> {
     'config'?: skillSet;
   }
+  interface AppUpdate extends JSXBase.HTMLAttributes<HTMLAppUpdateElement> {}
 
   interface IntrinsicElements {
     'app-about': AppAbout;
@@ -179,6 +188,7 @@ declare namespace LocalJSX {
     'app-section': AppSection;
     'app-skills': AppSkills;
     'app-skills-panel': AppSkillsPanel;
+    'app-update': AppUpdate;
   }
 }
 

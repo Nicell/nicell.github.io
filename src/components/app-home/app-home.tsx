@@ -25,6 +25,7 @@ export class AppHome {
         <app-section>
           <app-footer />
         </app-section>
+        <app-update/>
       </div>
     );
   }

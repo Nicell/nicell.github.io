@@ -51,7 +51,7 @@ export const config: configType = {
         It's inspired by a similar project named PugChamp, but it fits into another gamemode PugChamp does not offer.
         The current site was built using Vanilla JS, Socket.io, Node.js, and Express.
         An open source rewrite of the site is currently in progress allowing for more configuration and wider usability.
-        The site has served over 5,000 games to over a 1,000 users.
+        The site has served over 5,000 games to over 1,000 users.
         Today the site is still used every day by TF2 community members in North America and Europe.`,
       image: 'hlpugs',
       direction: 'left'

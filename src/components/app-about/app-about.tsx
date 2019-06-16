@@ -1,4 +1,5 @@
-import { h, Component, Element } from '@stencil/core';
+import { h, Component, Prop } from '@stencil/core';
+import { link } from '../../common/types';
 
 @Component({
   tag: 'app-about',
@@ -6,7 +7,7 @@ import { h, Component, Element } from '@stencil/core';
   shadow: true
 })
 export class AppAbout {
-  @Element() el: HTMLElement;
+  @Prop() config: link[];
 
   render() {
     return (
@@ -23,7 +24,10 @@ export class AppAbout {
         </app-anim>
         <app-anim delay={400}>
           <p class='hi'>
-            <span>Hi, I'm Nick.</span><span>I design and build web apps.</span>
+            <span>I'm Nick.</span><span>I design and build web apps.</span>
+          </p>
+          <p>
+            <span>People call me Nicell online.</span>
           </p>
           <p>
             I'm constantly learning, so I can refine my user interfaces, make my code easier to maintain, and optimize my deployments.
@@ -32,7 +36,16 @@ export class AppAbout {
             You can find some of my skills and projects here.
           </p>
         </app-anim>
-        <a target='_blank' href='mailto:nick@winans.codes'>
+        <app-anim delay={600}>
+          <div class='links'>
+            {this.config.map(link => (
+              <a target='_blank' rel='noopener' href={link.link}>
+                <app-icon icon={link.icon} />
+              </a>
+            ))}
+          </div>
+        </app-anim>
+        <a class='contactMe' target='_blank' href='mailto:nick@winans.codes'>
           <app-icon icon={{prefix: 'far', iconName: 'envelope'}}/>
           <span>Contact Me</span>
         </a>

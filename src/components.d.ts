@@ -7,16 +7,19 @@
 
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 import {
-  IconLookup,
-  IconName,
-} from '@fortawesome/fontawesome-svg-core';
-import {
+  link,
   project,
   skillSet,
 } from './common/types';
+import {
+  IconLookup,
+  IconName,
+} from '@fortawesome/fontawesome-svg-core';
 
 export namespace Components {
-  interface AppAbout {}
+  interface AppAbout {
+    'config': link[];
+  }
   interface AppAnim {
     'anim': 'up' | 'right' | 'left';
     'delay': number;
@@ -142,7 +145,9 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface AppAbout extends JSXBase.HTMLAttributes<HTMLAppAboutElement> {}
+  interface AppAbout extends JSXBase.HTMLAttributes<HTMLAppAboutElement> {
+    'config'?: link[];
+  }
   interface AppAnim extends JSXBase.HTMLAttributes<HTMLAppAnimElement> {
     'anim'?: 'up' | 'right' | 'left';
     'delay'?: number;

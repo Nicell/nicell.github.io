@@ -7,7 +7,6 @@ import { project } from '../../common/types';
   shadow: true
 })
 export class AppProject {
-
   @Prop() config: project;
 
   render() {

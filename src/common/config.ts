@@ -68,5 +68,49 @@ export const config: configType = {
       image: 'letstutor',
       direction: 'right'
     }
+  ],
+  links: [
+    {
+      icon: {
+        prefix: 'fab',
+        iconName: 'github'
+      },
+      link: 'https://github.com/Nicell'
+    },
+    {
+      icon: {
+        prefix: 'fas',
+        iconName: 'envelope'
+      },
+      link: 'mailto:nick@winans.codes'
+    },
+    {
+      icon: {
+        prefix: 'fab',
+        iconName: 'reddit'
+      },
+      link: 'https://www.reddit.com/user/Nicell'
+    },
+    {
+      icon: {
+        prefix: 'fab',
+        iconName: 'twitch'
+      },
+      link: 'https://www.twitch.tv/nicell'
+    },
+    {
+      icon: {
+        prefix: 'fab',
+        iconName: 'steam'
+      },
+      link: 'https://steamcommunity.com/id/nicell_'
+    },
+    {
+      icon: {
+        prefix: 'fab',
+        iconName: 'linkedin'
+      },
+      link: 'https://www.linkedin.com/in/nick-winans-417395173/'
+    }
   ]
 }

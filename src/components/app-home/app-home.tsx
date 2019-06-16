@@ -7,12 +7,11 @@ import { config } from '../../common/config';
   shadow: true
 })
 export class AppHome {
-
   render() {
     return (
       <div class='app-home'>
         <app-section>
-          <app-about />
+          <app-about config={config.links} />
         </app-section>
         <app-section>
           <app-skills skills={config.skills} />
@@ -25,7 +24,7 @@ export class AppHome {
         <app-section>
           <app-footer />
         </app-section>
-        <app-update/>
+        <app-update />
       </div>
     );
   }

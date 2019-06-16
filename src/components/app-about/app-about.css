@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
   box-sizing: border-box;
 }
 
@@ -46,7 +46,24 @@ p {
   margin: 0px 5px;
 }
 
-a {
+.links {
+  display: flex;
+  margin: 20px 0;
+}
+
+.links a {
+  font-size: 1.75em;
+  color: #ffffff;
+  opacity: var(--text-secondary);
+  transition: all .3s ease;
+  margin: 0 10px;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+.contactMe {
   display: inline-flex;
   align-items: center;
   border: solid 2px var(--primary);
@@ -68,7 +85,7 @@ a {
   transition: all .2s ease;
 }
 
-a:before {
+.contactMe:before {
   display: block;
   position: absolute;
   top: 0;
@@ -81,45 +98,45 @@ a:before {
   transition: all .2s ease;
 }
 
-a:hover:before {
+.contactMe:hover:before {
   transform: skewX(30deg) translateX(-15%);
 }
 
-a > app-icon {
+.contactMe > app-icon {
   font-size: 20px;
   padding-right: 10px;
 }
 
-a > span {
+.contactMe > span {
   white-space: nowrap;
   flex-shrink: 0;
   overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {
-  a {
+  .contactMe {
     top: auto;
     padding: 10px 12px 10px 11px;
     bottom: 15px;
     right: 15px;
   }
 
-  a > span {
+  .contactMe > span {
     opacity: 0;
     transition: all .3s ease;
     max-width: 0;
   }
 
-  a:hover > span {
+  .contactMe:hover > span {
     max-width: 100px;
     opacity: 1;
   }
 
-  a > app-icon {
+  .contactMe > app-icon {
     padding-right: 0;
   }
 
-  a:hover > app-icon {
+  .contactMe:hover > app-icon {
     padding-right: 10px;
   }
 }

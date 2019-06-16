@@ -1,4 +1,4 @@
-import { IconName } from "@fortawesome/pro-light-svg-icons";
+import { IconName, IconLookup } from "@fortawesome/pro-light-svg-icons";
 
 export interface skillSet {
   label: string;
@@ -13,7 +13,13 @@ export interface project {
   direction: 'left' | 'right';
 }
 
+export interface link {
+  icon: IconLookup;
+  link: string;
+}
+
 export interface configType {
   skills: skillSet[];
   projects: project[];
+  links: link[];
 }

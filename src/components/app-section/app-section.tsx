@@ -6,7 +6,6 @@ import { h, Component } from '@stencil/core';
   shadow: true
 })
 export class AppSection {
-
   render() {
     return (
       <div class='app-section'>

@@ -7,7 +7,6 @@ import { skillSet } from '../../common/types';
   shadow: true
 })
 export class AppSkillsPanel {
-
   @Prop() config: skillSet;
 
   render() {

@@ -16,7 +16,7 @@ export class AppIcon {
     const iconObj = icon(iconProp);
 
     if (!iconObj) {
-      console.error(`Icon not found! Icon: ${this.icon}`)
+      console.error(`Icon not found! Icon: ${typeof this.icon === 'object' ? `${this.icon.prefix}.${this.icon.iconName}` : `fal.${this.icon}`}`)
       return
     }
 

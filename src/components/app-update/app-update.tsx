@@ -20,7 +20,7 @@ export class AppUpdate {
     }
 
     this.visible = true;
-    registration.waiting.postMessage("skipWaiting");
+    registration.waiting.postMessage({type: 'SKIP_WAITING'});
   }
 
   render() {

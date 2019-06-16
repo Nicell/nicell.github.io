@@ -4,7 +4,7 @@
   display: flex;
   margin: -50px 0 50px 0px;
   background: var(--foreground-light);
-  box-shadow: 0px 4px 30px hsla(var(--hue), var(--saturation), 18%, .3);
+  box-shadow: 0px 4px 30px var(--shadow);
 }
 
 .app-skills app-skills-panel {

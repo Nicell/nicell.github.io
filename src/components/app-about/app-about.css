@@ -17,8 +17,8 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 0px 4px 30px var(--background-dark);
-  border: solid 4px var(--background-dark);
+  box-shadow: 0px 4px 30px var(--shadow);
+  border: solid 4px var(--shadow);
 }
 
 p {
@@ -27,7 +27,7 @@ p {
   line-height: 1.25;
   font-size: 1.125em;
   text-align: center;
-  text-shadow: 0px 2px 4px var(--background-dark);
+  text-shadow: 0px 2px 4px var(--shadow);
 }
 
 .hi {
@@ -54,7 +54,7 @@ a {
   padding: 10px 15px;
   background: var(--background);
   color: hsl(0, 0%, 100%);
-  box-shadow: 0px 2px 15px hsla(var(--hue), var(--saturation), 18%, .5);
+  box-shadow: 0px 2px 15px var(--shadow);
   position: fixed;
   top: 30px;
   right: 30px;

@@ -7,7 +7,7 @@
   height: 400px;
   width: 600px;
   margin: 30px;
-  box-shadow: 0px 4px 30px var(--background-dark);
+  box-shadow: 0px 4px 30px var(--shadow);
   background: var(--background);
   flex-shrink: 1;
 }
@@ -24,7 +24,7 @@
   padding: 8px;
   background: var(--background);
   display: flex;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 5px var(--shadow);
   z-index: 1;
   border-bottom: solid 2px var(--background-dark);
 }

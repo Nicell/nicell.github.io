@@ -14,16 +14,16 @@ export class AppProject {
 
     return (
       <div class={`app-project ${this.config.direction}`}>
-        <app-anim
-          anim={oppositeDir}
+        <nice-anim
+          direction={oppositeDir}
           duration={1000}
-          distance={`${oppositeDir === 'right' ? '-' : ''}100%`}
+          animation-distance={`100%`}
         >
           <app-browser-preview site={this.config.image} direction={this.config.direction} />
-        </app-anim>
+        </nice-anim>
         <section>
-          <app-anim delay={200} distance='100%'><h1>{this.config.title}</h1></app-anim>
-          <app-anim delay={300}><p>{this.config.description}</p></app-anim>
+          <nice-anim delay={200} animation-distance='100%'><h1>{this.config.title}</h1></nice-anim>
+          <nice-anim delay={300}><p>{this.config.description}</p></nice-anim>
         </section>
       </div>
     );

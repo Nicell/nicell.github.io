@@ -5,6 +5,7 @@ import { faEnvelope as farEnvelope, faSparkles } from '@fortawesome/pro-regular-
 import { faEnvelope as fasEnvelope } from '@fortawesome/pro-solid-svg-icons';
 import { faGithub, faReddit, faTwitch, faSteam, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import 'intersection-observer';
+import 'nice-anim';
 
 WebFont.load({
   google: {

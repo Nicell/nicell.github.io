@@ -20,13 +20,6 @@ export namespace Components {
   interface AppAbout {
     'config': link[];
   }
-  interface AppAnim {
-    'anim': 'up' | 'right' | 'left';
-    'delay': number;
-    'distance': string;
-    'duration': number;
-    'trigger': string;
-  }
   interface AppBrowserPreview {
     'direction': 'left' | 'right';
     'site': string;
@@ -62,12 +55,6 @@ declare global {
   var HTMLAppAboutElement: {
     prototype: HTMLAppAboutElement;
     new (): HTMLAppAboutElement;
-  };
-
-  interface HTMLAppAnimElement extends Components.AppAnim, HTMLStencilElement {}
-  var HTMLAppAnimElement: {
-    prototype: HTMLAppAnimElement;
-    new (): HTMLAppAnimElement;
   };
 
   interface HTMLAppBrowserPreviewElement extends Components.AppBrowserPreview, HTMLStencilElement {}
@@ -131,7 +118,6 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'app-about': HTMLAppAboutElement;
-    'app-anim': HTMLAppAnimElement;
     'app-browser-preview': HTMLAppBrowserPreviewElement;
     'app-footer': HTMLAppFooterElement;
     'app-home': HTMLAppHomeElement;
@@ -148,13 +134,6 @@ declare global {
 declare namespace LocalJSX {
   interface AppAbout extends JSXBase.HTMLAttributes<HTMLAppAboutElement> {
     'config'?: link[];
-  }
-  interface AppAnim extends JSXBase.HTMLAttributes<HTMLAppAnimElement> {
-    'anim'?: 'up' | 'right' | 'left';
-    'delay'?: number;
-    'distance'?: string;
-    'duration'?: number;
-    'trigger'?: string;
   }
   interface AppBrowserPreview extends JSXBase.HTMLAttributes<HTMLAppBrowserPreviewElement> {
     'direction'?: 'left' | 'right';
@@ -185,7 +164,6 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'app-about': AppAbout;
-    'app-anim': AppAnim;
     'app-browser-preview': AppBrowserPreview;
     'app-footer': AppFooter;
     'app-home': AppHome;

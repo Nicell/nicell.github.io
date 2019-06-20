@@ -12,17 +12,17 @@ export class AppAbout {
   render() {
     return (
       <div class='app-about'>
-        <app-anim distance='100%'>
+        <nice-anim animation-distance='100%'>
           <h1>nick.winans.codes</h1>
-        </app-anim>
-        <app-anim delay={100}>
+        </nice-anim>
+        <nice-anim delay={100}>
           <app-img
             alt='Me'
             src='me'
             type='jpg'
           />
-        </app-anim>
-        <app-anim delay={200}>
+        </nice-anim>
+        <nice-anim delay={200}>
           <p class='hi'>
             <span>I'm Nick.</span><span>I design and build web apps.</span>
           </p>
@@ -35,8 +35,8 @@ export class AppAbout {
           <p>
             You can find some of my skills and projects here.
           </p>
-        </app-anim>
-        <app-anim delay={300} distance='100%'>
+        </nice-anim>
+        <nice-anim delay={300} animation-distance='100%'>
           <div class='links'>
             {this.config.map(link => (
               <a target='_blank' rel='noopener' title={link.title} href={link.link}>
@@ -44,7 +44,7 @@ export class AppAbout {
               </a>
             ))}
           </div>
-        </app-anim>
+        </nice-anim>
         <a class='contactMe' target='_blank' href='mailto:nick@winans.codes'>
           <app-icon icon={{prefix: 'far', iconName: 'envelope'}}/>
           <span>Contact Me</span>

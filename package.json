@@ -19,6 +19,7 @@
     "@stencil/core": "^1.0.4",
     "@stencil/router": "^1.0.1",
     "intersection-observer": "^0.7.0",
+    "nice-anim": "^0.1.2",
     "webfontloader": "^1.6.28"
   },
   "license": "MIT",

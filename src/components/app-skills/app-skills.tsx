@@ -11,13 +11,13 @@ export class AppSkills {
 
   render() {
     return (
-      <app-anim delay={400} trigger='0%' distance='10%'>
+      <nice-anim delay={400} trigger-distance='0%' animation-distance='10%'>
         <div class='app-skills'>
           {this.skills.map((skillSet) => (
             <app-skills-panel config={skillSet} />
           ))}
         </div>
-      </app-anim>
+      </nice-anim>
     );
   }
 }

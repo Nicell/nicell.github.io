@@ -36,7 +36,14 @@ export class AppAbout {
             You can find some of my skills and projects here.
           </p>
         </nice-anim>
-        <nice-anim delay={300} animation-distance='100%'>
+        <br/>
+        <nice-anim delay={300} animation-distance="150%">
+          <a class='blog' href='blog'>
+            Visit My Blog
+          </a>
+        </nice-anim>
+        <br/>
+        <nice-anim delay={350} animation-distance='100%'>
           <div class='links'>
             {this.config.map(link => (
               <a target='_blank' rel='noopener' title={link.title} href={link.link}>

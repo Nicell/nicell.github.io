@@ -1,6 +1,7 @@
 /* inconsolata-regular - latin */
 @font-face {
   font-family: 'Inconsolata';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local('Inconsolata Regular'), local('Inconsolata-Regular'),
@@ -10,6 +11,7 @@
 /* inconsolata-700 - latin */
 @font-face {
   font-family: 'Inconsolata';
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: local('Inconsolata Bold'), local('Inconsolata-Bold'),
@@ -20,6 +22,7 @@
 /* source-sans-pro-regular - latin */
 @font-face {
   font-family: 'Source Sans Pro';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),

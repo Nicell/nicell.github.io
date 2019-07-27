@@ -10,14 +10,6 @@ export class AppBrowserPreview {
   @Prop() site: string;
   @Prop() direction: 'left' | 'right';
 
-  constructor() {
-    this.handleImgLoad = this.handleImgLoad.bind(this);
-  }
-
-  handleImgLoad() {
-    this.el.shadowRoot.querySelector('img.preview').classList.remove('loading');
-  }
-
   render() {
     return (
       <div class={`app-browser-preview ${this.direction}`}>

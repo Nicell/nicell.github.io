@@ -89,6 +89,14 @@ export const config: configType = {
     {
       icon: {
         prefix: 'fab',
+        iconName: 'linkedin'
+      },
+      title: 'LinkedIn',
+      link: 'https://www.linkedin.com/in/nick-winans-417395173/'
+    },
+    {
+      icon: {
+        prefix: 'fab',
         iconName: 'reddit'
       },
       title: 'Reddit',
@@ -109,14 +117,6 @@ export const config: configType = {
       },
       title: 'Steam',
       link: 'https://steamcommunity.com/id/nicell_'
-    },
-    {
-      icon: {
-        prefix: 'fab',
-        iconName: 'linkedin'
-      },
-      title: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/nick-winans-417395173/'
     }
   ]
 }

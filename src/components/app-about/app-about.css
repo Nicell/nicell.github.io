@@ -53,6 +53,7 @@ p {
 
 .links a {
   font-size: 1.75em;
+  font-size: 2em;
   color: #ffffff;
   opacity: var(--text-secondary);
   transition: all .3s ease;

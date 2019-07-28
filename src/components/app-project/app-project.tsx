@@ -1,4 +1,4 @@
-import { h, Component, Prop } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 import { project } from '../../common/types';
 
 @Component({

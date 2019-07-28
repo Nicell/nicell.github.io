@@ -1,4 +1,4 @@
-import { h, Component, Element, Prop } from '@stencil/core';
+import { Component, Element, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'app-img',

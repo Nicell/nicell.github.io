@@ -92,7 +92,7 @@ export const config: configType = {
         iconName: 'linkedin'
       },
       title: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/nick-winans-417395173/'
+      link: 'https://www.linkedin.com/in/nick-winans/'
     },
     {
       icon: {

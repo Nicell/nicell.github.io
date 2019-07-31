@@ -9,24 +9,21 @@ export const config: configType = {
         'React',
         'CSS and SASS',
         'Vanilla JS DOM',
-        'Handlebars',
         'Stencil.js',
-        'jQuery',
-        'GSAP Tween'
+        'WebSockets',
+        'UI Design'
       ]
     },
     {
       label: 'Back End',
       icon: 'server',
       skillList: [
-        'Node.js',
-        'Express',
+        'Node.js Ecosystem',
         'TypeScript',
-        'Redis',
-        'MySQL',
-        'MongoDB',
-        'PostgreSQL',
-        'WebSockets'
+        'Golang',
+        'Java',
+        'SQL (MySQL/PG)',
+        'ORM (Hibernate/TypeORM)'
       ]
     },
     {
@@ -35,12 +32,10 @@ export const config: configType = {
       skillList: [
         'Debian/Ubuntu',
         'NGINX',
-        'AWS',
-        'Vultr',
         'GitHub Pages',
-        'Cloudflare',
+        'GitLab',
         'Docker',
-        'GitLab'
+        'Cloudflare'
       ]
     }
   ],

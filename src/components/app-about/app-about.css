@@ -76,7 +76,7 @@ p {
   position: fixed;
   top: 30px;
   right: 30px;
-  font-family: 'Iconsolata', monospace;
+  font-family: 'Inconsolata', monospace;
   cursor: pointer;
   outline: none;
   overflow: hidden;
@@ -122,7 +122,7 @@ p {
   background: var(--background);
   color: hsl(0, 0%, 100%);
   box-shadow: 0px 2px 15px var(--shadow);
-  font-family: 'Iconsolata', monospace;
+  font-family: 'Inconsolata', monospace;
   cursor: pointer;
   outline: none;
   overflow: hidden;

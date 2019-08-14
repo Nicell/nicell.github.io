@@ -11,7 +11,7 @@ export class AppSkillsPanel {
 
   render() {
     return (
-      <div class='app-skills-panel'>
+      <div class="app-skills-panel">
         <header>
           <app-icon icon={{ prefix: 'fal', iconName: this.config.icon}} />
           <span>{this.config.label}</span>

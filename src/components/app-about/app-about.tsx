@@ -11,19 +11,19 @@ export class AppAbout {
 
   render() {
     return (
-      <div class='app-about'>
-        <nice-anim animation-distance='100%'>
+      <div class="app-about">
+        <nice-anim animation-distance="100%">
           <h1>nick.winans.codes</h1>
         </nice-anim>
         <nice-anim delay={100}>
           <app-img
-            alt='Me'
-            src='me'
-            type='jpg'
+            alt="Me"
+            src="me"
+            type="jpg"
           />
         </nice-anim>
         <nice-anim delay={200}>
-          <p class='hi'>
+          <p class="hi">
             <span>I'm Nick.</span><span>I design and build web apps.</span>
           </p>
           <p>
@@ -38,21 +38,21 @@ export class AppAbout {
         </nice-anim>
         <br/>
         <nice-anim delay={300} animation-distance="150%">
-          <a class='blog' href='blog'>
+          <a class="blog" href="blog">
             Visit My Blog
           </a>
         </nice-anim>
         <br/>
-        <nice-anim delay={350} animation-distance='100%'>
-          <div class='links'>
+        <nice-anim delay={350} animation-distance="100%">
+          <div class="links">
             {this.config.map(link => (
-              <a target='_blank' rel='noopener' title={link.title} href={link.link}>
+              <a target="_blank" rel="noopener" title={link.title} href={link.link}>
                 <app-icon icon={link.icon} />
               </a>
             ))}
           </div>
         </nice-anim>
-        <a class='contactMe' target='_blank' href='mailto:nick@winans.codes'>
+        <a class="contactMe" target="_blank" href="mailto:nick@winans.codes">
           <app-icon icon={{prefix: 'far', iconName: 'envelope'}}/>
           <span>Contact Me</span>
         </a>

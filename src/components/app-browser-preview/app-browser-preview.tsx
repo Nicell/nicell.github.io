@@ -13,15 +13,15 @@ export class AppBrowserPreview {
   render() {
     return (
       <div class={`app-browser-preview ${this.direction}`}>
-        <div class='titlebar'>
-          <div class='button red' />
-          <div class='button yellow' />
-          <div class='button green' />
+        <div class="titlebar">
+          <div class="button red" />
+          <div class="button yellow" />
+          <div class="button green" />
         </div>
         <app-img
           alt={`${this.site} preview`}
           src={`preview-${this.site}`}
-          type='png'
+          type="png"
         />
       </div>
     );

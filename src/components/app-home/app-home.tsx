@@ -9,7 +9,7 @@ import { config } from '../../common/config';
 export class AppHome {
   render() {
     return (
-      <div class='app-home'>
+      <div class="app-home">
         <app-section>
           <app-about config={config.links} />
         </app-section>

@@ -11,8 +11,8 @@ export class AppSkills {
 
   render() {
     return (
-      <nice-anim delay={400} trigger-distance='0%' animation-distance='10%'>
-        <div class='app-skills'>
+      <nice-anim delay={400} trigger-distance="0%" animation-distance="10%">
+        <div class="app-skills">
           {this.skills.map((skillSet) => (
             <app-skills-panel config={skillSet} />
           ))}

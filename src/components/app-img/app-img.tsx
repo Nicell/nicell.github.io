@@ -21,10 +21,10 @@ export class AppImg {
 
   render() {
     return (
-      <picture class='app-img'>
+      <picture class="app-img">
         <source
           srcSet={`/assets/img/${this.src}.webp`}
-          type='image/webp'
+          type="image/webp"
         />
         <source
           srcSet={`/assets/img/${this.src}.${this.type}`}
@@ -32,7 +32,7 @@ export class AppImg {
         />
         <img
           onLoad={this.handleImgLoad}
-          class='loading'
+          class="loading"
           alt={this.alt}
           src={`/assets/img/${this.src}.${this.type}`}
         />

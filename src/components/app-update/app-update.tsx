@@ -25,10 +25,10 @@ export class AppUpdate {
 
   render() {
     return this.visible ? (
-      <div class='app-update'>
-        <div class='holder' onClick={() => window.location.reload()}>
+      <div class="app-update">
+        <div class="holder" onClick={() => window.location.reload()}>
           <app-icon icon={{prefix: 'far', iconName: 'sparkles'}}/>
-          <div class='auto-return'>
+          <div class="auto-return">
             <span>New content is available!</span>
             <span>Refresh or click to update.</span>
           </div>

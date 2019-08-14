@@ -22,7 +22,7 @@ export class AppProject {
           <app-browser-preview site={this.config.image} direction={this.config.direction} />
         </nice-anim>
         <section>
-          <nice-anim delay={200} animation-distance='100%'><h1>{this.config.title}</h1></nice-anim>
+          <nice-anim delay={200} animation-distance="100%"><h1>{this.config.title}</h1></nice-anim>
           <nice-anim delay={300}><p>{this.config.description}</p></nice-anim>
         </section>
       </div>

@@ -8,8 +8,8 @@ import { Component, h } from '@stencil/core';
 export class AppSection {
   render() {
     return (
-      <div class='app-section'>
-        <div class='wrapper'>
+      <div class="app-section">
+        <div class="wrapper">
           <slot />
         </div>
       </div>

@@ -7,6 +7,8 @@ a {
   color: hsl(0, 0%, 100%);
   box-shadow: 0px 2px 15px var(--shadow);
   font-family: 'Inconsolata', monospace;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   outline: none;
   overflow: hidden;
@@ -17,4 +19,9 @@ a {
 
 a:hover {
   border-color: var(--primary);
+}
+
+app-icon {
+  padding-right: 10px;
+  font-size: 24px;
 }

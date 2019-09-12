@@ -1,4 +1,4 @@
-import { IconName, IconLookup } from "@fortawesome/pro-light-svg-icons";
+import { IconName, IconLookup } from "@fortawesome/fontawesome-svg-core";
 
 export interface skillSet {
   label: string;

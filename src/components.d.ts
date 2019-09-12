@@ -26,6 +26,7 @@ export namespace Components {
   }
   interface AppButton {
     'href': string;
+    'icon'?: IconLookup | IconName;
     'target': string;
   }
   interface AppFooter {}
@@ -152,6 +153,7 @@ declare namespace LocalJSX {
   }
   interface AppButton extends JSXBase.HTMLAttributes<HTMLAppButtonElement> {
     'href'?: string;
+    'icon'?: IconLookup | IconName;
     'target'?: string;
   }
   interface AppFooter extends JSXBase.HTMLAttributes<HTMLAppFooterElement> {}

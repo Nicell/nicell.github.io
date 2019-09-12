@@ -24,6 +24,10 @@ export namespace Components {
     'direction': 'left' | 'right';
     'site': string;
   }
+  interface AppButton {
+    'href': string;
+    'target': string;
+  }
   interface AppFooter {}
   interface AppHome {}
   interface AppIcon {
@@ -61,6 +65,12 @@ declare global {
   var HTMLAppBrowserPreviewElement: {
     prototype: HTMLAppBrowserPreviewElement;
     new (): HTMLAppBrowserPreviewElement;
+  };
+
+  interface HTMLAppButtonElement extends Components.AppButton, HTMLStencilElement {}
+  var HTMLAppButtonElement: {
+    prototype: HTMLAppButtonElement;
+    new (): HTMLAppButtonElement;
   };
 
   interface HTMLAppFooterElement extends Components.AppFooter, HTMLStencilElement {}
@@ -119,6 +129,7 @@ declare global {
   interface HTMLElementTagNameMap {
     'app-about': HTMLAppAboutElement;
     'app-browser-preview': HTMLAppBrowserPreviewElement;
+    'app-button': HTMLAppButtonElement;
     'app-footer': HTMLAppFooterElement;
     'app-home': HTMLAppHomeElement;
     'app-icon': HTMLAppIconElement;
@@ -138,6 +149,10 @@ declare namespace LocalJSX {
   interface AppBrowserPreview extends JSXBase.HTMLAttributes<HTMLAppBrowserPreviewElement> {
     'direction'?: 'left' | 'right';
     'site'?: string;
+  }
+  interface AppButton extends JSXBase.HTMLAttributes<HTMLAppButtonElement> {
+    'href'?: string;
+    'target'?: string;
   }
   interface AppFooter extends JSXBase.HTMLAttributes<HTMLAppFooterElement> {}
   interface AppHome extends JSXBase.HTMLAttributes<HTMLAppHomeElement> {}
@@ -165,6 +180,7 @@ declare namespace LocalJSX {
   interface IntrinsicElements {
     'app-about': AppAbout;
     'app-browser-preview': AppBrowserPreview;
+    'app-button': AppButton;
     'app-footer': AppFooter;
     'app-home': AppHome;
     'app-icon': AppIcon;

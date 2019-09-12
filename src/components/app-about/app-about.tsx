@@ -38,9 +38,9 @@ export class AppAbout {
         </nice-anim>
         <br/>
         <nice-anim delay={300} animation-distance="150%">
-          <a class="blog" href="blog">
+          <app-button href="blog">
             Visit My Blog
-          </a>
+          </app-button>
         </nice-anim>
         <br/>
         <nice-anim delay={350} animation-distance="100%">

@@ -49,7 +49,23 @@ export const config: configType = {
         The site has served over 5,000 games to over 1,000 users.
         Today the site is still used every day by TF2 community members in North America and Europe.`,
       image: 'hlpugs',
+      github: 'https://github.com/HLPugs/HLPugs',
+      link: 'https://hlpugs.tf',
+      stack: ['TypeScript', 'React', 'WebSockets', 'Express'],
       direction: 'left'
+    },
+    {
+      title: 'Where to Live',
+      description: `Where to Live is a fun side project of parsing data from NOAA using Golang and displaying it using HTML5 Canvas and Stencil.js.
+        The outcome of this learning experience is an automatically generated webpage displaying a visual representation of the best places to live based on weather.
+        This project was inspired by Kelly Norton's "Pleasant Places", but extended with the addition of bad days being taken into account, which improved our results.
+        HTML5 canvas was used instead of DOM or SVG for the increased performance because we render over 3,000 elements.
+        The canvas element even has controls that modify the pan and zoom of the map efficiently.`,
+      image: 'wheretolive',
+      github: 'https://github.com/Nicell/where-to-live',
+      link: 'https://nick.winans.codes/where-to-live',
+      stack: ['TypeScript', 'Golang', 'Stencil.js', 'HTML5 Canvas', 'CircleCI'],
+      direction: 'right'
     },
     {
       title: 'Let\'s Tutor',
@@ -61,6 +77,20 @@ export const config: configType = {
         Currently this project is in the process of an enhancement.
         React Native and a new admin dashboard built with React are on the list of changes.`,
       image: 'letstutor',
+      link: 'https://letstutor.org',
+      stack: ['JavaScript', 'React', 'Express'],
+      direction: 'left'
+    },
+    {
+      title: 'CarMon',
+      description: `CarMon was created for a capstone course in my senior year of high school.
+        Our team created a module that sits in your car and measures temperature, CO2 levels, and GPS location.
+        This information could then be used to see whether someone is in the car at high temperatures with a location attached.
+        The module in the car can connect to the partnering mobile app to sync all of the data via Bluetooth to be visualized.
+        Python was used to write the program that took the raw data from the sensors and recorded it to a SQLite database,
+        and JavaScript was used to transmit the data via Bluetooth and write the mobile app in React Native.`,
+      image: 'carmon',
+      stack: ['JavaScript', 'Python', 'Bluetooth'],
       direction: 'right'
     }
   ],
@@ -92,26 +122,10 @@ export const config: configType = {
     {
       icon: {
         prefix: 'fab',
-        iconName: 'reddit'
-      },
-      title: 'Reddit',
-      link: 'https://www.reddit.com/user/Nicell'
-    },
-    {
-      icon: {
-        prefix: 'fab',
         iconName: 'twitch'
       },
       title: 'Twitch',
       link: 'https://www.twitch.tv/nicell'
-    },
-    {
-      icon: {
-        prefix: 'fab',
-        iconName: 'steam'
-      },
-      title: 'Steam',
-      link: 'https://steamcommunity.com/id/nicell_'
     }
   ]
 }

@@ -30,7 +30,7 @@ export class AppAbout {
             <span>People call me Nicell online.</span>
           </p>
           <p>
-            I'm constantly learning, so I can refine my user interfaces, make my code easier to maintain, and optimize my deployments.
+            I'm constantly learning so I can refine my user interfaces, make my code easier to maintain, and optimize my deployments.
           </p>
           <p>
             You can find some of my skills and projects here.

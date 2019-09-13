@@ -14,7 +14,7 @@ header {
   align-items: center;
   font-family: 'Inconsolata', monospace;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 header > app-icon {
@@ -30,7 +30,7 @@ section {
 }
 
 section span {
-  margin-top: 10px;
+  margin-bottom: 15px;
   text-align: center;
   opacity: var(--text-secondary);
 }

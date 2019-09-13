@@ -1,5 +1,7 @@
 import { IconName, IconLookup } from "@fortawesome/fontawesome-svg-core";
 
+export type stackItem = 'TypeScript' | 'JavaScript' | 'React' | 'Stencil.js' | 'WebSockets' | 'Express' | 'Golang' | 'HTML5 Canvas' | 'CircleCI' | 'Python' | 'Bluetooth';
+
 export interface skillSet {
   label: string;
   icon: IconName;
@@ -10,6 +12,9 @@ export interface project {
   title: string;
   description: string;
   image: string;
+  stack: stackItem[];
+  github?: string;
+  link?: string;
   direction: 'left' | 'right';
 }
 

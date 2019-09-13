@@ -1,11 +1,10 @@
 .app-project {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .right {
   flex-direction: row-reverse;
-  align-items: flex-start;
 }
 
 h1 {
@@ -28,6 +27,26 @@ p {
   font-size: 1.125em;
   text-indent: 2em;
   opacity: var(--text-secondary);
+}
+
+.project-links {
+  display: flex;
+}
+
+.project-stack {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.project-technology {
+  margin: 5px;
+  padding: 5px 10px;
+  white-space: nowrap;
+  border: solid 2px;
+  border-radius: 999px;
 }
 
 @media only screen and (max-width: 768px) {

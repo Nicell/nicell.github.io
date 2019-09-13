@@ -9,10 +9,8 @@ export class AppFooter {
   render() {
     return (
       <footer class="app-footer">
-        <footer>
-          <p>nick.winans.codes © {new Date().getFullYear()}</p>
-          <p>powered by <a target="_blank" rel="noopener" href="https://stenciljs.com">Stencil.js</a> and <a target="blank" rel="noopener" href="https://github.com/Nicell/nicell.github.io">GitHub Pages</a></p>
-        </footer>
+        <p>nick.winans.codes © {new Date().getFullYear()}</p>
+        <p>powered by <a target="_blank" rel="noopener" href="https://stenciljs.com">Stencil.js</a> and <a target="blank" rel="noopener" href="https://github.com/Nicell/nicell.github.io">GitHub Pages</a></p>
       </footer>
     );
   }

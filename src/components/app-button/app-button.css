@@ -13,6 +13,7 @@ a {
   outline: none;
   overflow: hidden;
   text-decoration: none;
+  text-align: center;
   font-size: 16px;
   transition: all .2s ease;
 }

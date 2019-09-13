@@ -1,0 +1,8 @@
+.app-footer {
+  width: 100%;
+}
+
+.app-footer > p {
+  width: 100%;
+  text-align: center;
+}

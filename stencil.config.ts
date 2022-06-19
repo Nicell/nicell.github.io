@@ -7,7 +7,7 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'www',
-      baseUrl: 'https://nick.winans.codes'
+      baseUrl: 'https://nick.winans.io'
       // uncomment the following line to disable service workers in production
       // serviceWorker: null
     }

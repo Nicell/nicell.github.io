@@ -13,7 +13,7 @@ export class AppAbout {
     return (
       <div class="app-about">
         <nice-anim animation-distance="100%">
-          <h1>nick.winans.codes</h1>
+          <h1>nick.winans.io</h1>
         </nice-anim>
         <nice-anim delay={100}>
           <app-img

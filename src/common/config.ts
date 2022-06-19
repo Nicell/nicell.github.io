@@ -63,7 +63,7 @@ export const config: configType = {
         The canvas element even has controls that modify the pan and zoom of the map efficiently.`,
       image: "wheretolive",
       github: "https://github.com/Nicell/where-to-live",
-      link: "https://nick.winans.codes/where-to-live",
+      link: "https://nick.winans.io/where-to-live",
       stack: ["TypeScript", "Golang", "Stencil.js", "HTML5 Canvas", "CircleCI"],
       direction: "right"
     },

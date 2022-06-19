@@ -16,6 +16,6 @@ deploy:
   keep_history: true
   local_dir: www
   target_branch: master
-  fqdn: nick.winans.codes
+  fqdn: nick.winans.io
   on:
     branch: dev

@@ -109,7 +109,7 @@ export const config: configType = {
         iconName: "envelope"
       },
       title: "Email",
-      link: "mailto:nick@winans.codes"
+      link: "mailto:nick@winans.io"
     },
     {
       icon: {

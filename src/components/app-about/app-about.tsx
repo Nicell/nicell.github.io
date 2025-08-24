@@ -52,7 +52,7 @@ export class AppAbout {
             ))}
           </div>
         </nice-anim>
-        <a class="contactMe" target="_blank" href="mailto:nick@winans.codes">
+        <a class="contactMe" target="_blank" href="mailto:nick@winans.io">
           <app-icon icon={{prefix: 'far', iconName: 'envelope'}}/>
           <span>Contact Me</span>
         </a>
